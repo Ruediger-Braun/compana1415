@@ -87,7 +87,7 @@
 *.pyg
 
 # morewrites
-*.mw
+#*.mw
 
 # nomencl
 *.nlo
@@ -107,3 +107,7 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# Maple
+*_MAS.bak
+Lektion*.pdf
