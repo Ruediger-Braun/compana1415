@@ -1,0 +1,113 @@
+Lektion 1
+*********
+
+Arithmetik
+==========
+
++     Befehle werden mit ``;``
+      oder ``:`` abgeschlossen.  Im
+      ersten Fall wird das Ergebnis angezeigt, im zweiten nicht.  
+      Zeilenende impliziert ``;``
+
++     ``+, -, *, /, ^``
+
+      arithmetische Operatoren
+
++     ``!``
+
+      Faktorielle
+
++     ``evalf(`` *x* ``)``
+
+      numerische Auswertung von *x* auf 10 gültige Stellen
+
++     ``evalf(`` *x* ``,`` *n* ``)``
+
+      numerische Auswertung von *x* auf *n* gültige Stellen      
+
++     ``Digits`` := *n*
+
+      setzt die Genauigkeit auf *n* Stellen
+
+Variablen
+=========
+
++     ``:=``
+
+      Zuweisung
+
++     ``=``
+
+      Vergleichsoperator (später)
+
++     *a* ``:= '`` *a* ``'``
+
+      Aufhebung einer Zuweisung
+
+elementare Funktionen
+=====================
+
++     ``sqrt``
+
+      Quadratwurzel
+
++     ``sin, cos, tan, cot``
+
+      trigonometrische Funktionen
+
++     ``arcsin, arccos, arctan, arccot``
+
+      inverse trigonometrische Funktionen
+
+..      ``arctan`` siehe auch in `Der Arcustangens`_
+
++     ``log, ln``
+
+      natürlicher Logarithmus
+
++     ``exp``
+
+      Exponentialfunktion
+
++     ``Pi``
+
+      Ludolfsche Zahl pi
+  
+Vereinfachungen
+===============
+
++     ``simplify``
+
+      allgemeiner Vereinfachungsbefehl, siehe auch in Ersetzungen_
+
++     ``normal``
+
+      Kürzen von Brüchen
+
++     ``normal(`` *f* ``, expanded)``
+ 
+      dasselbe, aber Zähler und Nenner werden expandiert
+
++     ``expand``
+
+      expandiert Polynome, trigonometrische Funktionen usw.
+
++     ``factor``
+
+      faktorisiert Polynome
+
+Hilfsprogramme
+==============
+
++     ``restart``
+
+      löscht alle Variablen
+
++     ``lprint``
+
+      Ausgabe in 1D 
+
+zurück zum Inhaltsverzeichnis_
+
+
+
