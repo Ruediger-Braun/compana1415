@@ -111,3 +111,9 @@ sympy-plots-for-*.tex/
 # Maple
 *_MAS.bak
 Lektion*.pdf
+
+# scons
+.sconsign.dblite
+
+# emacs
+*~
