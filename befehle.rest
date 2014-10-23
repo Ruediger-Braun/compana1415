@@ -11,8 +11,311 @@ Computergestützte Mathematik zur Analysis
 .. contents:: Inhaltsverzeichnis
               :backlinks: none
 
-.. include:: lektion01.rest
-.. include:: lektion02.rest
+Lektion 1
+*********
+
+Arithmetik
+==========
+
++     Befehle werden mit ``;``
+      oder ``:`` abgeschlossen.  Im
+      ersten Fall wird das Ergebnis angezeigt, im zweiten nicht.  
+      Zeilenende impliziert ``;``
+
++     ``+, -, *, /, ^``
+
+      arithmetische Operatoren
+
++     ``!``
+
+      Faktorielle
+
++     ``evalf(`` *x* ``)``
+
+      numerische Auswertung von *x* auf 10 gültige Stellen
+
++     ``evalf(`` *x* ``,`` *n* ``)``
+
+      numerische Auswertung von *x* auf *n* gültige Stellen      
+
++     ``Digits`` := *n*
+
+      setzt die Genauigkeit auf *n* Stellen
+
+Variablen
+=========
+
++     ``:=``
+
+      Zuweisung
+
++     ``=``
+
+      Vergleichsoperator (später)
+
++     *a* ``:= '`` *a* ``'``
+
+      Aufhebung einer Zuweisung
+
+elementare Funktionen
+=====================
+
++     ``sqrt``
+
+      Quadratwurzel
+
++     ``sin, cos, tan, cot``
+
+      trigonometrische Funktionen
+
++     ``arcsin, arccos, arctan, arccot``
+
+      inverse trigonometrische Funktionen
+
+..      ``arctan`` siehe auch in `Der Arcustangens`_
+
++     ``log, ln``
+
+      natürlicher Logarithmus
+
++     ``exp``
+
+      Exponentialfunktion
+
++     ``Pi``
+
+      Ludolfsche Zahl pi
+  
+Vereinfachungen
+===============
+
++     ``simplify``
+
+      allgemeiner Vereinfachungsbefehl, siehe auch in Ersetzungen_
+
++     ``normal``
+
+      Kürzen von Brüchen
+
++     ``normal(`` *f* ``, expanded)``
+ 
+      dasselbe, aber Zähler und Nenner werden expandiert
+
++     ``expand``
+
+      expandiert Polynome, trigonometrische Funktionen usw.
+
++     ``factor``
+
+      faktorisiert Polynome
+
+Hilfsprogramme
+==============
+
++     ``restart``
+
+      löscht alle Variablen
+
++     ``lprint``
+
+      Ausgabe in 1D 
+
+zurück zum Inhaltsverzeichnis_
+
+
+
+Lektion 2
+*********
+
+dito Operator
+=============
+
++     %
+
+      Ergebnis der letzten Berechnung
+
++     Zugriff auf label ist nur mit der Maus möglich
+
+
+Summen und Grenzwerte
+=====================
+
++     ``sum(`` *f*, *n* ``=`` *a* ``..`` *b* ``)``
+
+      Summe von *f* für *n* von *a* bis *b*, dabei ist *f* ein Ausdruck in *n*
+
++     ``infinity``
+
+      Konstante unendlich
+
++     ``limit(`` *f* ``,`` *x* ``=`` *a* ``)``
+
+      Grenzwert des Ausdrucks *f* in *x* = *a*
+
++     ``limit(`` *f* ``,`` *x* ``=`` *a* ``, right)``
+
+      Grenzwert des Ausdrucks *f* in *x* = *a* von rechts (von links
+      mit ``left``)
+
+Ableitungen und Integrale
+=========================
+
++     ``diff(`` *f* ``,`` *x* ``)``
+
+      Ableitung des Ausdrucks *f* nach *x*
+
++     ``int(`` *f*, *x* ``)``
+
+      Stammfunktion des Ausdrucks *f* bezüglich der Variablen *x*
+
++     ``int(`` *f*, *x* ``=`` *a* ``..`` *b* ``)``
+
+      bestimmtes Integral
+
++     ``Int``
+
+      Integral nur anzeigen
+
+Ersetzungen
+===========
+
++     ``eval(`` *expr* ``, {`` *a* ``=`` *A* ``,`` *b* ``=`` *B* ``,``
+      ... ``,`` *z* ``=`` *Z* ``})``
+
+      in *expr* werden *a*, *b*, ..., *z* durch  *A*, *B*, ..., *Z* ersetzt.
+
++     ``simplify(`` *epr* ``, {`` *a* ``=`` *A* ``,`` *b* ``=`` *B* ``,``
+      ... ``,`` *z* ``=`` *Z* ``})``
+
+      Vereinfachung unter den angegebenen Nebenbedingungen
+
++     ``collect(`` *p* ``,`` *x* ``)``
+
+      fasst im Polynom *p* alle *x*-Potenzen zusammen (*p* muss
+      expandiert sein) 
+
+Ausdrücke vs Funktionen
+=======================
+
++     ``(`` *a* ``,`` *b* ``,`` ... ``,`` *z* ``) ->`` *expr*
+
+      Funktion der Variablen *a*, *b*, ..., *z*, deren Funktionsvorschrift
+      durch *expr* gegeben ist 
+ 
++     ``unapply(`` *expr* ``,`` *a* ``,`` *b* ``,`` ... ``,`` *z* ``)``
+
+      wandelt den Ausdruck *expr* in eine Funktion der Variablen *a*, *b*,
+      ..., *z* um	
+
+Funktionsgraphen
+================
+
++     ``plot(`` *expr* ``,`` *x* ``=`` *a* ``..`` *b* ``)``
+
+      zeigt den Graph des Ausdrucks *expr* für *x* von *a* bis *b*
+
++     ``plot(`` *f* ``,`` *a* ``..`` *b* ``)``
+
+      zeigt den Graph der Funktion *f* über dem Intervall [*a*, *b*]
+
++     ``plot([`` *ex_1* ``,`` *ex_2* ``,`` ... ``,`` *ex_n* ``],`` *x*
+      ``=`` *a* ``..`` *b* ``, color = [`` *farbe_1* ``,`` *farbe_2* 
+      ``,`` ... ``,`` *farbe_n*	``])``
+
+      zeigt die Graphen der Ausdrücke *ex_1*, *ex_2*, ..., *ex_n* für
+      *x* von *a* bis *b* in einem Fenster, jeden in der angegebenen
+      Farbe 
+
++     ``plot([`` *f_1* ``,`` *f_2* ``,`` ... ``,`` *f_n* ``],`` *a* ``..`` 
+      *b* ``, color = [`` *farbe_1* ``,`` *farbe_2* ``,`` ... ``,`` 
+      *farbe_n* ``])``
+
+      dasselbe für Funktionen 
+
++     hinter dem Argumentbereich kann ein Wertebereich in der
+      gleichen Form angegeben werden 
+
++     Die folgenden Optionen können nachgestellt werden
+      
+      +  ``axes = boxed``
+
+         Koordinatenachsen; Alternativen sind ``normal``, ``framed``, ``none``
+
+      +  ``discont = true``
+
+	 Suche nach Sprungstellen einschalten
+
+      +  ``thickness =`` *n*
+
+	 Strichdicke, erlaubt sind *n* = 0,1,2,3
+
+      +  ``numpoints =`` *n*
+
+	 *n* Funktionsauswertungen verwenden
+
+..      siehe auch `ebene parametrische Plots`_ und `logplot` im
+..      Abschnitt Datenimport_
+
+
+Maple rechnet komplex
+=====================
+
++     ``I``
+
+      imaginäre Einheit
+
++     ``sqrt(`` *x* ``)``
+
+      Quadratwurzel
+
++     ``Re(`` *z* ``), Im(`` *z* ``)``
+
+      Real- und Imaginärteil
+
++     ``conjugate(`` *z* ``)``
+
+      komplex Konjugierte 
+
++     ``abs(`` *z* ``)``
+
+      Absolutbetrag
+
+*     ``csgn``
+
+      komplexe Vorzeichenfunktion
+
++     *befehl* ``assuming`` *property_1* ``,`` *property_2* ``,`` ... ``,``
+      *property_n*
+
+      *befehl* wird unter den zusätzlichen Annahmen *property_1*, ...,
+      *property_n* ausgeführt
+
+      wichtige Beispiele für properties:
+      
+      *		*x* ``> 2``
+
+      *         *y* ``<=`` *x*
+
+      *         *x* ``::real``
+
+      *		*x* ``::positive``
+
+      *		*n* ``::integer``
+
+      *		*n* ``::odd``
+
+      *		*n* ``::even``
+
++     ``evalc(`` *ausdruck* ``)``
+
+      ausdruck wird unter der Annahme ausgewertet, dass alle
+      auftretenden Variablen reell sind      
+
+zurück zum Inhaltsverzeichnis_
+
+
+
+
 
 ----------------------
 
