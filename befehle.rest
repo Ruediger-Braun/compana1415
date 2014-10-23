@@ -11,8 +11,8 @@ Computergestützte Mathematik zur Analysis
 .. contents:: Inhaltsverzeichnis
               :backlinks: none
 
-.. include:: lektion01.txt
-.. include:: lektion02.txt
+.. include:: lektion01.rest
+.. include:: lektion02.rest
 
 ----------------------
 
