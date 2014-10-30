@@ -315,6 +315,9 @@ Maple rechnet komplex
       ausdruck wird unter der Annahme ausgewertet, dass alle
       auftretenden Variablen reell sind      
 
+Lektion 3
+*********
+
 3D-Funktionsgraphen
 ===================
 
