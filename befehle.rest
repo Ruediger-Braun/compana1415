@@ -253,6 +253,10 @@ Funktionsgraphen
 
 	 *n* Funktionsauswertungen verwenden
 
+      +  ``scaling = constrained``
+
+	 alle Achsen verwenden denselben Maßstab
+
 ..      siehe auch `ebene parametrische Plots`_ und `logplot` im
 ..      Abschnitt Datenimport_
 
@@ -310,6 +314,108 @@ Maple rechnet komplex
 
       ausdruck wird unter der Annahme ausgewertet, dass alle
       auftretenden Variablen reell sind      
+
+3D-Funktionsgraphen
+===================
+
++     ``plot3d(`` *expr* ``,`` *x* ``=`` *a* ``..`` *b* ``,`` 
+      *y* ``=`` *c* ``..`` *d* ``)``
+
+      zeigt den Graph des Ausdrucks *expr* für *x* von *a* bis *b* und
+      *y* von *c* bis *d*
+
++     ``plot3d(`` *f* ``,`` *a* ``..`` *b* ``,`` *c* ``..`` *d* ``)``
+
+      zeigt den Graph der Funktion *f* über dem Rechteck [*a*,
+      *b*]x[*c*, *d*]
+
++     Zusätzliche Optionen nur für 3D
+
+      * ``view =`` *e* ``..`` *f*
+
+	Wertebereich auf [*e*, *f*] einschränken
+
+      * ``shading = zhue``
+
+	höhenabhängige Farbwerte
+
+      * ``style = patchcontour``
+
+	Höhenlinien, Alternativen: ``patch``, ``patchnogrid``, ``wireframe``
+
+      * ``transparency =`` *t*
+
+	Transparenz festlegen, *t* liegt zwischen 0 und 1, dabei führt
+	1 zu einem vollständig durchsichtigen Plot
+
+      * ``orientation = [`` *phi* ``,`` *psi* ``]``
+
+	Ort des Betrachters festlegen
+
+
+Listen und Mengen
+=================
+
++     ``[`` *a* ``,`` *b* ``,`` ... ``,`` *z* ``]``
+
+      Liste
+
++     ``{`` *a* ``,`` *b* ``,`` ... ``,`` *z* ``}``
+
+      Menge
+
++     *a* ``,`` *b* ``,`` ... ``,`` *z*
+
+      Folge (Achtung: eine Folge wird nicht als Einzelobjekt
+      verstanden) 
+
++     ``seq(`` *ausdr* ``,`` *j* ``=`` *a* ``..`` *b* ``)``
+
+      Erzeugung einer Folge
+
++     ``nops(`` *liste* ``)``
+   
+      Anzahl der Elemente; statt *liste* ist auch eine Menge oder
+      eine Folge zulässig
+
++     ``convert(`` *expr*, *type* ``)``
+
+      Umwandlung des Ausdrucks *expr* in ein Objekt des Typs *type*.
+      Wichtige Typen sind:
+
+      * list
+
+      Liste
+
+      * set
+
+      Menge
+
+      * ``'+'``
+
+      Summe
+
++     ``map(`` *f* ``,`` *liste* ``,`` *opt* ``)``
+
+      auf alle Elemente von *liste* wird die Funktion *f* angewandt; 
+      *opt* ist eine Folge von Optionen der Funktion *f*,
+      die auch leer sein darf 
+
+Schleifen
+=========
+
++     ``for`` *l* ``in`` *list* ``do;`` *befehl_1* ``;``
+      ... *befehl_n* ``; end do;``
+
+      Schleife über alle Elemente der Liste *list*
+
++     ``for`` *i* ``from`` *a* ``to`` *b* ``do;`` 
+      *befehl_1* ``;`` ... *befehl_n* ``; end do;``
+
+      Schleife für *i* von *a* bis *b*, beide einschließlich 
+
+
+
 
 zurück zum Inhaltsverzeichnis_
 
