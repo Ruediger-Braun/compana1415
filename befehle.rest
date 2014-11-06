@@ -398,12 +398,6 @@ Listen und Mengen
 
       Summe
 
-+     ``map(`` *f* ``,`` *liste* ``,`` *opt* ``)``
-
-      auf alle Elemente von *liste* wird die Funktion *f* angewandt; 
-      *opt* ist eine Folge von Optionen der Funktion *f*,
-      die auch leer sein darf 
-
 Schleifen
 =========
 
@@ -417,7 +411,108 @@ Schleifen
 
       Schleife für *i* von *a* bis *b*, beide einschließlich 
 
+Lektion 4
+*********
 
+automatisches Lösen von Gleichungen
+===================================
+
++     ``solve(`` *Glg* ``,`` *x* ``)``
+
+      löst Gleichung *Glg* nach der Variablen *x*
+
++     ``solve(`` *Gls* ``,`` *vars* ``)``
+
+      löst Gleichungssystem *Gls* nach den Variablen
+      *vars*, dabei sind *Gls* und *vars* Mengen
+
++     ``solve(`` ..., ``Explicit)``
+
+      ``RootOf``-Notation wird nach Möglichkeit vermieden
+
++     ``is(`` *expr* ``)``
+
+      stellt den Wahrheitsgehalt von *expr* fest
+
++     ``fsolve``
+
+      wie ``solve``, aber numerisch;
+
+      folgende Optionen
+      
+      *		``complex``
+
+		suche auch nach komplexen Nullstellen
+
+      *		*x* ``=`` *x_0*
+
+		Startwert der Suche ist x_0
+
++     ``RootOf``
+
+      Notation zur Darstellung von Lösungen
+
++     ``map(`` *f* ``,`` *liste* ``,`` *opt* ``)``
+
+      auf alle Elemente von *liste* wird die Funktion *f* angewandt; 
+      *opt* ist eine Folge von Optionen der Funktion *f*,
+      die auch leer sein darf 
+
+Pakete
+======
+
++     ``with(`` *paket* ``)``
+
+      lädt die Bibliothek *paket*
+  
+Graphen von Lösungsmengen
+=========================
+
++     ``with(plots)``
+
+      lädt das Paket mit speziellen Grafikfunktionen
+
++     ``implicitplot(`` *Glg* ``,`` *x* ``=`` *a* ``..`` *b* ``,``
+      *y* ``=`` *c* ``..`` *d* ``)`` 
+
+      zeichnet die Lösungsmenge der Gleichung *Glg* in den
+      Variablen *x* und *y* im angegebenen Bereich; statt
+      einer Gleichung ist auch eine Menge von Gleichungen
+      zulässig; es dürfen Plotoptionen angeschlossen werden;
+      ``implicitplot`` gehört zum Paket ``plots``
+
++     ``plot_real_curve(`` *p* ``,`` *x* ``,`` *y* ``)``
+
+      zeichnet die Nullstellen des Polynoms *p* in den Variablen *x*
+      und *y*; Plotoptionen sind zulässig; ``plot_real_curve`` gehört
+      zum Paket ``algcurves``
+
+Lösen von Polynomgleichungen
+============================
+
++ ``@``
+
+  Verknüpfungsoperator
+
+Lösung transzendenter Gleichungen
+===================================
+
++ ``solve(`` ..., ``allsolutions)``
+
+  bei transzendenten Gleichungen alle Lösungen bestimmen 
+
++ ``about(`` *x* ``)``
+
+  bestehende Annahmen über *x* anzeigen
+
++ ``fsolve(`` *Glg* ``,`` *x* ``=`` *a* ``..`` *b* ``)``
+
+  Option von ``fsolve``, um den Suchbereich einzuschränken
+
++ ``series(`` *expr*, ``,`` *x* ``=`` *a* ``,`` *n* ``)``
+
+  Reihenentwicklung des Ausdrucks *expr* im Punkt *a* nach der
+  Variablen *x* zur Ordnung *n*.  Der Punkt darf *infinity* sein.
 
 
 zurück zum Inhaltsverzeichnis_
