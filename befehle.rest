@@ -398,6 +398,8 @@ Listen und Mengen
 
       Summe
 
+      siehe auch `Trigonometrische Funktionen`_
+
 Schleifen
 =========
 
@@ -514,12 +516,92 @@ Lösung transzendenter Gleichungen
   Reihenentwicklung des Ausdrucks *expr* im Punkt *a* nach der
   Variablen *x* zur Ordnung *n*.  Der Punkt darf *infinity* sein.
 
+Lektion 05
+**********
+
+Träge Operatoren
+================
+
++ ``Sum, Int, Diff``
+
+  Varianten vom ``sum``, ``int``, ``diff``, bei denen Summe, Integral
+  und Ableitung nur dargestellt, aber nicht ausgewertet werden
+
++ ``value``
+  
+  Befehl zur Auswertung der trägen Operatoren
+
++ ``'``
+
+Zusammenfassen
+===============
+
++ ``collect(`` *poly* ``,`` *var* ``)``
+
+  *poly* ist ein expandiertes Polynom; die Terme gleicher Potenz in
+  *var* werden zusammengefasst
+ 
++ ``collect(`` *poly* ``,`` *liste* ``)``
+
+  dasselbe für Polynome in mehreren Veränderlichen; die zu
+  berücksichtigenden Veränderlichen sind in *liste* aufgezählt und
+  werden der Reihe nach abgearbeitet
+
+Trigonometrische Funktionen
+===========================
+
++ ``sin``, ``cos``, ``tan``, ``cot``, ``arcsin``, ``arccos``,
+  ``arctan``
+
+  Trigonometrische Funktionen
+
++ ``expand``
+
+  Anwendung der Additionstheoreme aif trigonometrische Funktionen
+
++ ``combine``
+
+  Umkehrung von ``expand``, wo sinnvoll
+
++ ``trigsubs``
+
+  schlägt äquivalente trigonometrische Ausdrücke vor
+
++ ``convert(`` *ausdruck* ``, sincos)``
+
+  Tangens und exp(*ix*) werden in Sinus- und Cosinusfunktionen
+  umgewandelt
+
+Potenzfunktionen
+================
+
++ ``surd(`` *x* ``,`` *n* ``)``
+
+  reelle *n*-te Wurzel aus reellem *x*
+
+Integration
+===========
+
++ ``piecewise``
+
+  stückweise definierter Ausdruck
+
+gesteuerte Integration
+======================
+
++ ``Change(`` *Int* ``,`` *ersetzung* ``)``
+
+  Integration durch Substitution, hierbei sind *ersetzung* die
+  Substitution als Gleichung und *Int* ein unausgewertetes Integral;
+  ``Change`` ist Bestandteil des Pakets ``IntegrationTools``
+
++ ``Parts(`` *Int* ``,`` *u* ``)``
+
+  Partielle Integration, hierbei ist *Int* ein unausgewertetes
+  Integral und *u* der Faktor, der abgeleitet wird; ``Parts`` ist
+  Bestandteil des Pakets ``IntegrationTools``
 
 zurück zum Inhaltsverzeichnis_
-
-
-
-
 
 ----------------------
 
