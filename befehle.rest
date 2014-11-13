@@ -531,8 +531,6 @@ Träge Operatoren
   
   Befehl zur Auswertung der trägen Operatoren
 
-+ ``'``
-
 Zusammenfassen
 ===============
 
@@ -557,7 +555,7 @@ Trigonometrische Funktionen
 
 + ``expand``
 
-  Anwendung der Additionstheoreme aif trigonometrische Funktionen
+  Anwendung der Additionstheoreme auf trigonometrische Funktionen
 
 + ``combine``
 
