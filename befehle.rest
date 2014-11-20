@@ -599,6 +599,58 @@ gesteuerte Integration
   Integral und *u* der Faktor, der abgeleitet wird; ``Parts`` ist
   Bestandteil des Pakets ``IntegrationTools``
 
+Lektion 06
+**********
+
+Grenzwerte
+==========
+
++ ``Limit``
+
+  träger Operator zu ``limit`` (s. `Summen und Grenzwerte`_)
+
+Reihen
+======
+
++ ``print``
+
+  Ausgabe in normaler Qualität (im Gegensatz zu lprint (siehe
+  Hilfsprogramme_))
+
++ ``#``
+
+  Kommentar
+
+
+Unendliche Produkte
+===================
+
++     ``product(`` *f*, *n* ``=`` *a* ``..`` *b* ``)``
+
+      Produkt über *f* für *n* von *a* bis *b*, dabei ist *f* ein
+      Ausdruck in *n* 
+
++     ``Product``
+
+      zugehöriger träger Operator
+
+Taylorpolynom
+=============
+
++	``convert(`` *reihe*, ``polynom)``
+
+	Entfernen des Terms ``O(`` *x* ``^`` *n* ``)`` aus der Ausgabe
+	von ``series``
+
+Das komplex Bild
+================
+
++       ``display({`` *pl1* ``,`` ... ``,`` *pln* ``})``
+	
+	zeigt die Plots *pl1* bis *pln* in einem Bild an.  ``display``
+	gehört zum Paket ``plots``
+
+
 zurück zum Inhaltsverzeichnis_
 
 ----------------------
