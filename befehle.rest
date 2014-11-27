@@ -768,12 +768,13 @@ Andere Operationen mit Matrizen
 
 +       ``Transpose``
 
-	Transponierte
+	Transponierte, ``Transpose`` gehört zum Paket ``LinearAlgebra``
 
 +       ``DotProduct(`` *u* ``,`` *v* ``)``
 
 	Skalarprodukt, wobei der erste Faktor komplex konjugiert wird; 
-	die Option ``conjugate=false`` verhindert das
+	die Option ``conjugate=false`` verhindert das.  ``DotProduct``
+	gehört zum Paket ``LinearAlgebra``
 
 
 ----------------------
