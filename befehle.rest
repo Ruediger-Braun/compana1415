@@ -651,7 +651,130 @@ Das komplex Bild
 	gehört zum Paket ``plots``
 
 
-zurück zum Inhaltsverzeichnis_
+Lektion 07
+**********
+
+Vektoren und Matrizen 
+=====================
+
++ ``<`` *a*, *b*, ..., *z* ``>``
+
+	Spaltenvektor
+
++ ``<`` *a* ``|`` *b* ``|`` ... ``|`` *z* ``>``
+
+	Zeilenvektor
+
++ ``<`` *z1*, *z2*, ..., *zn* ``>``
+
+	Matrix, aufgebaut aus Zeilenvektoren *z1*, *z2*, ...
+
++ ``<`` *s1* ``|`` *s2* ``|`` ... ``|`` *sn* ``>``
+
+	Matrix, aufgebaut aus Spaltenvektoren *s1*, *s2*, ...
+
++ ``.``
+
+	Matrixprodukt
+
++ ``Matrix``
+
+	Erzeugung von Matrizen; Spezialfälle sind
+
+	+ ``Matrix(`` *vector*, ``shape = diagonal)``
+
+		erzeugt Diagonalmatrix aus einem Vektor
+
+	+ ``Matrix(`` *n*, ``shape = identity)``
+
+		erzeugt *n* x *n* Einheitsmatrix
+
++ ``Determinant``
+
+	Determinante; der Befehl ``Determinant`` gehört zum Paket
+	``LinearAlgebra``
+
+
+Matrixplot
+==========
+
++	``matrixplot(`` *M* ``, heights=histogram)``
+
+	3D-Plot, dessen Höhen durch die Einträge der
+	Matrix *M* gegeben werden; ``matrixplot`` gehört zum Paket
+	``plots``
+
+Lineare Gleichungssysteme
+=========================
+
++	``GenerateMatrix(`` *ListevonGleichungen*, *Variablen*,
+        *Option* ``)``
+	  
+	erzeugt Matrix zu dem durch *ListevonGleichungen* in den
+	*Variablen* gegebenen Gleichungssystem; mögliche *Option* ist
+	``augmented = true``, dies zeigt an, dass eine Spalte mit der
+	rechten Seite angebaut werden soll; ``GenerateMatrix`` gehört zum Paket
+	``LinearAlgebra``      
+
++	``LinearSolve(`` *A*, *b* ``)``
+
+	löst die Matrixgleichung *Ax* = *b*; ``LinearSolve`` gehört zum Paket
+	``LinearAlgebra``
+
++	``ReducedRowEchelonForm(`` *A* ``)``
+
+	Zeilenstufenform von *A*; ``ReducedRowEchelonForm`` gehört zum Paket
+	``LinearAlgebra``
+
+Zeilenweise Manipulation
+========================
+
++	``RowOperation``
+
+	Sammelbefehl für die zeilenweise Manipulation von Matrizen;
+	``RowOperation`` gehört zum Paket ``LinearAlgebra``	
+
++	``Rank``
+
+	Rang einer Matrix; gehört zum Paket ``LinearAlgebra``
+
+
+Normalformen
+============
+
++	``Eigenvalues(`` *A* ``)``
+
+	Eigenwerte von *A*; ``Eigenvalues`` gehört zum Paket
+	``LinearAlgebra`` 
+
++	``Eigenvectors(`` *A* ``)``
+
+	Eigenwerte und -vektoren von *A*; ``Eigenvectors`` gehört zum Paket
+	``LinearAlgebra``
+
++	``JordanForm(`` *M* ``, output = ['J', 'Q'])``
+
+	Jordansche Normalform von *M*, ausgegeben wird die Jordanform
+	zusammen mit der zugehörigen Matrix der Hauptvektoren;
+	``JordanForm`` gehört zum Paket ``LinearAlgebra``
+
++	``SubMatrix``
+
+	Teilmatrix, ``SubMatrix`` gehört zum Paket ``LinearAlgebra``
+
+
+Andere Operationen mit Matrizen
+===============================
+
++       ``Transpose``
+
+	Transponierte
+
++       ``DotProduct(`` *u* ``,`` *v* ``)``
+
+	Skalarprodukt, wobei der erste Faktor komplex konjugiert wird; 
+	die Option ``conjugate=false`` verhindert das
+
 
 ----------------------
 
