@@ -117,3 +117,6 @@ Lektion*.pdf
 
 # emacs
 *~
+
+# einzelne Dateien
+logbsp.data
