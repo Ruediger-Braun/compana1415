@@ -776,6 +776,133 @@ Andere Operationen mit Matrizen
 	die Option ``conjugate=false`` verhindert das.  ``DotProduct``
 	gehört zum Paket ``LinearAlgebra``
 
+Lektion 08
+**********
+
+ebene parametrische Plots 
+=========================
+
++ ``plot([`` *x*, *y*, *t* ``=`` *a* ``..`` *b* ``],`` *Optionen* ``)``
+
+	zeichnet die durch die Ausdrücke *x* und *y* gegebene ebene
+	Kurve, dabei sind *x* und *y* Ausdrücke in *t*; statt einer
+	einzelnen Kurve ist auch eine Menge von Kurven möglich
+
++ ``polarplot([`` *r*, *phi*, *t* ``=`` *a* ``..`` *b* ``],`` *Optionen* ``)``
+
+	dasselbe, aber für Polarkoordinaten *r* und *phi*;
+	``polarplot`` gehört zum Paket ``plots``
+
+Der Arcustangens
+================
+
++ ``arctan(`` *y*, *x* ``)``
+
+	Winkel des Punktes *x* + i *y* gegen die positive reelle Achse
+
+Polygonzüge
+===========
+
++ ``plot (`` *liste* ``)``
+
+        zeichnet das durch eine Liste von Datenpunkten gegebene Polygon
+
+Datenimport
+===========
+
++ ``read(`` *Dateiname* ``)``
+
+	liest Maplekommandos aus Datei mit Namen *Dateiname*; der Name
+	sollte in Anführungsstriche ``"`` eingeschlossen sein
+
++ ``logplot``
+
+        halblogarithmischer Graph
+
++ ``save(`` *a* ``,`` ... ``,`` *z** ``.`` Dateiname* ``)``
+
+        schreibt die angegebenen Ausdrücke in die Datei
+
+
+Raumkurven 
+==========
+
++ ``spacecurve([`` *x*, *y*, *z*, *t* ``=`` *a* ``..`` *b* ``],`` *Optionen* ``)``
+
+	zeichnet die durch die Ausdrücke *x*, *y* und *z* gegebene
+	Raumkurve, dabei sind *x*, *y* und *z* Ausdrücke in *t*; statt
+	einer einzelnen Kurve ist auch eine Menge von Kurven möglich;
+	``spacecurve`` gehört zum Paket ``plots``
+
++ ``tubeplot([`` *x*, *y*, *z*, *t* ``=`` *a* ``..`` *b* ``], radius =`` *r* ``,`` *Optionen* ``)``
+
+        wie spacecurve, aber statt einer Raumkurve wird ein Schlauch
+	der angegebenen Dicke gezeigt
+
+	zusätzliche Optionen sind hier
+
+	+ ``color = [`` *r*, *g*, *b* ``]``
+
+		    Angabe eine Färbefunktion als RGB-Wert; dabei sind
+		    *r*, *g* und *b* Ausdrücke im Parameter *t*
+
+        + ``color`` = *h*
+
+		    Angabe einer Färbefunktion durch einen Parameter
+		    *h*, der ein Ausdruck im Parameter *t* ist
+
+
+
+Flächen im Raum 
+===============
+
++ ``plot3d([`` *x*, *y*, *z* ``],`` *s* ``=`` *a* ``..`` *b*, *t* 
+  ``=`` *c* ``..`` *d*, *optionen* ``)``
+
+	zeichnet die durch die Ausdrücke *x*, *y* und *z* gegebene
+	Fläche im Raum; dabei sind *x*, *y* und *z* Ausdrücke in den
+	Parametern *s* und *t*
+
+	zusätzliche Optionen sind hier
+
+	+ ``color = [`` *r*, *g*, *b* ``]``
+
+		    Angabe eine Färbefunktion als RGB-Wert; dabei sind
+		    *r*, *g* und *b* Ausdrücke in den Parametern *s*
+		    und *t*
+
+        + ``color`` = *h*
+
+		    Angabe einer Färbefunktion durch einen Parameter
+		    *h*, der ein Ausdruck in den Parametern *s* und
+		    *t* ist
+
+
+Ableitungen von Vektorfunktionen
+================================
+
++	``VectorCalculus``
+
+	Paket zur Differentialrechnung mehrerer Veränderlicher
+
++	``BasisFormat(false)``
+
+	Gradienten etc. werden in der gewohnten Tupelschreibweise
+	ausgegeben.  ``BasisFormat`` gehört zum Paket
+	``VectorCalculus``.
+
+Gradienten und der Laplace-Operator
+===================================
+
++	``Gradient(`` *f*, *liste* ``)``
+
+	Gradient von *f* nach den in *liste* aufgezählten Variablen.
+	``Gradient`` gehört zum Paket ``VectorCalculus``.
+ 
++       ``Laplacian(`` *f*, *liste* ``)``
+
+	Laplace-Operator von *f* nach den in *liste* aufgezählten
+	Variablen. ``Laplacian`` gehört zum Paket ``VectorCalculus``.
 
 ----------------------
 
