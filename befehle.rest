@@ -819,7 +819,7 @@ Datenimport
 
         halblogarithmischer Graph
 
-+ ``save(`` *a* ``,`` ... ``,`` *z** ``.`` Dateiname* ``)``
++ ``save(`` *a* ``,`` ... ``,`` *z* ``,`` *Dateiname* ``)``
 
         schreibt die angegebenen Ausdrücke in die Datei
 
