@@ -945,7 +945,7 @@ Vektorfelder
 	+ ``fieldstrength = log``
 
 	          Pfeillänge hängt logarithmisch von der Norm des
-		  Vektorfelds ab; andere Möglichkeit ist ``fixed``
+		  Vektorfelds ab; eine andere Möglichkeit ist ``fixed``
 
 +	``fieldplot3d(`` *vf*, *x* = *a* ``..`` *b*, *y* = *c* ``..``
 	*d*, *z* = *e* ``..`` *f*, *optionen* ``)``
