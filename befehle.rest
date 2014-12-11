@@ -904,6 +904,73 @@ Gradienten und der Laplace-Operator
 	Laplace-Operator von *f* nach den in *liste* aufgezählten
 	Variablen. ``Laplacian`` gehört zum Paket ``VectorCalculus``.
 
+Lektion 9
+*********
+
+Norm eines Vektors
+==================
+
++	``Norm``
+
+	Norm eines Vektors oder einer Matrix; ``Norm`` gehört zum
+	Paket ``LinearAlgebra``.  Nicht zu verwechslen mit der Norm
+	eines Vektorfelds (s. Vektorfelder_)	
+
+Das Kreuprodukt
+===============
+
++	``CrossProduct``
+
+	Kreuzprodukt; ``CrossProduct`` gehört zum Paket ``LinearAlgebra``
+
+Vektorfelder
+============
+
++	``VectorField(`` *vektor* ``, cartesian[`` *liste* ``])``
+
+	*vektor* ist ein Vektor, der ein Ausdruck in den in *liste*
+        aufgezählten Variablen ist.  ``VectorField`` gehört zum Paket
+	``VectorCalculus``.
+
++	``fieldplot(`` *vf*, *x* = *a* ``..`` *b*, *y* = *c* ``..``
+	*d*, *optionen* ``)``
+
+	Darstellung des ebenen Vektorfelds *vf* durch Pfeile.  *vf*
+	ist ein Vektorfeld in den Variablen *x* und *y*.  Die Anzahl
+	der Pfeile kann mit ``grid`` beeinflusst
+	werden.  ``fieldplot`` gehört zum Paket ``plots``.
+
+	zusätzliche Optionen sind hier
+
+	+ ``fieldstrength = log``
+
+	          Pfeillänge hängt logarithmisch von der Norm des
+		  Vektorfelds ab; andere Möglichkeit ist ``fixed``
+
++	``fieldplot3d(`` *vf*, *x* = *a* ``..`` *b*, *y* = *c* ``..``
+	*d*, *z* = *e* ``..`` *f*, *optionen* ``)``
+
+	Darstellung des 3D-Vektorfelds *vf* durch Pfeile.  *vf*
+	ist ein Vektorfeld in den Variablen *x*, *y* und *z*.  Die Anzahl
+	der Pfeile kann mit ``grid`` beeinflusst
+	werden.  ``fieldplot3d`` gehört zum Paket ``plots``.
+
++       ``Norm``
+
+	Die Norm eines Vektorfelds.  Gehört zum Paket
+	``VectorCalculus``. Gibt Funktion zurück.  Nicht zu
+	verwechseln mit der Norm eines Vektors aus dem Paket
+	``LinearAlgebra`` (s. `Norm eines Vektors`_)
+
+Taylorpolynom in mehreren Veränderlichen
+========================================
+
++	``mtaylor(`` *A* ``,`` *liste* ``,`` *n* ``)``
+
+	Taylorentwicklung des Ausdrucks *A* nach den Variablen in
+	*liste* bis zur totalen Ordnung *n* ausschließlich
+
+
 ----------------------
 
 © 2014 `Rüdiger Braun`_
