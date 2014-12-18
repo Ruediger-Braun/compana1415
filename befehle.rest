@@ -970,6 +970,63 @@ Taylorpolynom in mehreren Veränderlichen
 	Taylorentwicklung des Ausdrucks *A* nach den Variablen in
 	*liste* bis zur totalen Ordnung *n* ausschließlich
 
+Lektion 10
+**********
+
+Hessematrix, Divergenz und Rotation
+===================================
+
++       ``SetCoordinates``
+
+	Setzt ein Koordinatensystem.  Beliebte Koordinatensysteme sind 
+	``cartesian[x,y]`` und ``cartesian[x,y,z]``.
+	``SetCoordinates`` gehört zum Paket ``VectorCalculus``
+
++       ``Divergence``
+
+	Divergenz eine Vektorfeldes.  ``Divergence`` gehört zum Paket
+	``VectorCalculus``
+
++       ``Curl``
+
+	Rotation eines Vektorfeldes.  ``Curl`` gehört zum Paket
+	``VectorCalculus``
+
++       ``Laplacian``
+
+	Laplace-Operator.  ``Laplacian`` gehört zum Paket
+	``VectorCalculus``
+
++       ``Hessian``
+
+	Hessematrix.  ``Hessian`` gehört zum Paket
+	``VectorCalculus``
+
++	``Jacobian(`` *F*, *liste* ``)``
+
+	Jacobimatrix der Abbildung *F* nach den in *liste*
+	aufgezählten Variablen; ``Jacobimatrix`` gehört zum Paket
+	``VectorCalculus`` 
+
+Definitheit
+===========
+
++       ``IsDefinite(`` *A* ``, query =`` *definitheitseigenschaft* ``)``
+
+	Prüfung, ob Matrix *A* die *definitheitseigenschaft* besitzt.  
+	Zulässig für *definitheitseigenschaft* sind
+	u.a. ``positive_definite`` und ``negative_definite``.
+	Voreinstellung ist ``positive_definite``.  ``IsDefinite``
+	gehört zum Paket ``LinearAlgebra``
+
+Polarkoordinaten
+================
+
++       ``MapToBasis``
+
+	Wechsel des Koordinatensystems.  ``MapToBasis`` gehört zum
+	Paket ``VectorCalculus``
+
 
 ----------------------
 
