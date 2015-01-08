@@ -1047,6 +1047,86 @@ Extrema unter Nebenbedingungen
 	Maximum und Minimum einer Folge oder Liste
 
 
++       ``isprime``
+
+	probabilistischer Primzahltest
+
++	``select(`` *b*, *liste*, *parameter* ``)``
+
+	*b* ist eine Boolesche Funktion; ``select`` wählt aus *liste*
+	alle *a* aus, für die *b* ( *a*, *parameter*) den Wert ``true``
+	ergibt
+
++	``has(`` *a*, *b* ``)``
+
+	Boolesche Funktion, die ``true`` ergibt, wenn *a* den
+	Teilausdruck *b* enthält
+
+
+Zeichenkettenverarbeitung und Plotverschönerung
+===============================================
+
++	``||``
+
+	Verheftung von Zeichenketten
+
++	``cat``
+
+        Verheftung von Zeichenketten
+
++	``print(`` *ausdruck* ``)``
+
+	*ausdruck* wird ausgegeben, selbst dann wenn Ausgabe z.B. in
+        ``for``-Schleife unterdrückt ist
+
++	``latex(`` *ausdruck* ``)``
+
+	*ausdruck* wird in der Schriftsatzsprache LaTeX ausgegeben
+
++	``typeset(`` *ausdruck1* ``,`` *ausdruck2* ``,`` ... ``)``
+
+	fügt Ausdrücke zu Zeichenkette zusammen, nützlich in Zusammenhang
+	mit Plotbefehlen
+
++	weitere Optionen der ``plot``-Befehle
+
+	*	``font = [TIMES, ROMAN,`` *n* ``]``
+
+		stellt den Zeichensatz für die Achsen auf die Größe
+		*n* ein
+
+	*	``titlefont = [TIMES, ROMAN,`` *n* ``]``
+
+		stellt den Zeichensatz für die Überschrift auf die Größe
+		*n* ein
+
+	*	``labels = [`` *x*, *y* ``]``
+
+		legt Achsenbeschriftung fest
+
+	*	``lightmodel =`` *modell*
+
+		*modell* ist einer der Werte ``light1``, ``light2``,
+                ``light3`` oder ``light4`` 
+
++	``textplot([`` *x*, *y*, *text* ``], align = {`` *position*
+	``},`` *optionen* ``)``
+
+	druckt *text* an die Stelle (*x*, *y*); ``textplot`` gehört
+	zum Paket ``plots``; *position* ist eine Kombination der Werte
+
+	*	 ``ABOVE``
+
+	*	 ``BELOW``
+
+	*	 ``RIGHT``
+
+	*	 ``LEFT``
+
++	``textplot3d([`` *x*, *y*, *z*, *text* ``], align = {``
+	*position* ``},`` *optionen* ``)``
+
+	dasselbe dür 3D-Plots; ``textplot3d`` gehört zum Paket ``plots``
 
 
 ----------------------
