@@ -1028,9 +1028,30 @@ Polarkoordinaten
 	Paket ``VectorCalculus``
 
 
+Lektion 11
+**********
+
+Extrema unter Nebenbedingungen
+==============================
+
++       *A* ``union`` *B*
+
+	Vereinigung der Mengen *A* und *B*
+
++       ``not``
+
+	boolesche Verneinung
+
++       ``max``, ``min``
+
+	Maximum und Minimum einer Folge oder Liste
+
+
+
+
 ----------------------
 
-© 2014 `Rüdiger Braun`_
+© 2014-2015 `Rüdiger Braun`_
 
 zurück zur Homepage_ 
 
