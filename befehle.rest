@@ -1128,6 +1128,48 @@ Zeichenkettenverarbeitung und Plotverschönerung
 
 	dasselbe dür 3D-Plots; ``textplot3d`` gehört zum Paket ``plots``
 
+Lektion 12
+**********
+
+Gewöhnliche Differentialgleichungen
+===================================
+
++	``dsolve({`` *Dgl_1*, ..., *Dgl_n*, *Ab_*, ..., *Ab_n* ``}``,
+	*y* ``(`` *x* ``),`` *optionen* ``)``
+
+	Löst gewöhnliches Differentialgleichungssystem in *y(x*) mit
+	Anfangsbedingungen; die Anfangsbedingungen dürfen fehlen;
+	mögliche *optionen* sind:
+
+	+	 ``type = numeric``
+
+		 Numerische Lösung; dazu müssen ausreichend
+		 Anfangsbedingungen vorgegeben sein
+
+	+	 ``output = listprocedure``
+
+		 steuert Ausgabe bei numerischer Lösung
+
++	``rhs``
+
+	rechte Seite einer Gleichung
+
++       ``D(`` *f* ``)``
+
+	Die Funktion *f* wird einmal abgeleitet
+
+Höhere Ordnung
+==============
+
++	weitere Optionen der ``plot``-Befehle
+
+	*	``legend``
+
+		Legende zur Unterscheidung mehrerer Kurven
+
+
+
+
 
 ----------------------
 
