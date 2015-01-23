@@ -1167,7 +1167,88 @@ Höhere Ordnung
 
 		Legende zur Unterscheidung mehrerer Kurven
 
+Lektion 13
+**********
 
+Die Besselsche Differentialgleichung
+====================================
+
++	``BesselJ, BesselK, BesselI, BesselY``
+
+	Besselfunktionen
+
+Bewegte Bilder
+==============
+
++       ``animate(`` *plotbefehl* ``, [`` *argumente* ``],`` *t* ``=``
+	*r* .. *s*, *optionen*)
+
+	Führt für 25 Werte von *t* im Intervall [*r*, *s*] den Befehl
+	*plotbefehl* ( *argumente* ) aus und zeigt die Ergebnisse
+	hintereinander als bewegtes Bild.  Optionen von *plotbefehl*
+	gehören in die *argumente*, Optionen von ``animate`` gehören
+	in die *optionen*.  Eine wichtige Option ist ``frames``, wenn
+	man nicht genau 25 Bilder wünscht.  ``animate`` gehört zum
+	Paket ``plots``
+
++	``BesselJ, BesselK, BesselI, BesselY``
+
+	Besselfunktionen
+
+Ausdrucke
+=========
+
++	``plotsetup(window)``
+
+	Ausgabe in Fenster 
+
++	``plotsetup(inline)``
+
+	Ausgabe in das Arbeitblatt
+
++	``plotsetup(`` *format*   ``, plotoutput =`` *datei* ``)``
+
+	Ausdruck in *datei* im Format *format*, einige Möglichkeiten
+	sind
+
+	+    ``ps`` Postscript
+
+	+    ``cps`` farbiges Postscript
+
+        +    ``jpeg``  Jpeg
+
+Prozeduren und Verzweigungen
+============================
+
++       ``proc`` ... ``end proc``
+
+	Anfang und Ende einer Prozedur.  Die Prozedur gibt das
+	Ergebnis des letzten Befehls zurück.  Eine Optionen ist
+
+	*  ``options=remember``
+
+	   merkt sich das Ergebnis für spätere Berechnungen.  Vor
+	   allem nützlich bei rekursiven Prozduren
+
+	*  ``local`` *A*
+
+	   die Variable *A* ist lokal zur Prozedur.  Das Gegenteil ist
+	   ``global``
+
++       ``return`` *A*
+
+	gibt *A* zurück
+
++       ``if`` *A* ``then`` ... ``end if``
+	
+	Bedingte Ausführung.  Beliebig viele weitere Bedingungen
+	werden mit ``elif`` eingefügt.  Hinter allen Bedingungen kann
+	``else`` verwendet werden, um die noch unbehandelten Fälle zu
+	bearbeiten. 
+
++       *n* ``mod`` *m*
+
+	Rest von *n* modulo *m*
 
 
 
