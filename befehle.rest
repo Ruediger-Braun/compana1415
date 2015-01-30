@@ -1250,6 +1250,57 @@ Prozeduren und Verzweigungen
 
 	Rest von *n* modulo *m*
 
+Lektion 14
+**********
+
+Zufallszahlen
+=============
+
++	*p* ``:= rand(`` *a* ``..`` *b* ``)``
+
+	Gibt eine Funktion *p* zurück, so dass jeder Aufruf *p* ``()``
+	eine pseudozufällige ganze Zahl zwischen *a* und *b* ergibt
+	(Grenzen eingeschlossen)
+
++	``randomize(`` *n* ``)``
+
+	Setzt den Startpunkt der Pseudo-Zufallszahlenfolge
+
++       ``Shuffle(`` *L* ``)``
+
+	Permutiert die Elemente der Liste *L* zufällig.  ``Shuffle``
+	gehört zum Paket ``Statistics``
+
++       ``RandomVariable(Uniform(`` *a* ``,`` *b* ``))``
+	
+	Gibt eine auf dem Intervall [a,b] gleichverteilte
+	Zufallsvariable zurück.  ``RandomVariable`` gehört zum Paket
+	``Statistics`` 
+
++       ``Sample(`` *X*, *n* ``)``
+
+	Zieht eine wie die Zufallsvariable *X* verteilte Stichprobe
+	vom Umfang *n*.  ``Sample`` gehört zum Paket ``Statistics``
+
++       ``Explode``
+
+	Verwandelt einen STring in eine Liste von Zeichen.
+	``Explode`` gehört zum Paket ``StringTools``
+
++       ``Implode``
+
+	Umkehroperation zu ``Explode``.  ``Implode`` gehört zum Paket
+	``StringTools``
+
+
+Fourierreihen
+=============
+
++	``Heaviside``
+
+	Heaviside-Funktion
+
+
 
 
 ----------------------
