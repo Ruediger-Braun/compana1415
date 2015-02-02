@@ -1,0 +1,2074 @@
+<?xml version="1.0" encoding="ascii" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ascii" />
+<meta name="generator" content="Docutils 0.11: http://docutils.sourceforge.net/" />
+<title>Computergest&#252;tzte Mathematik zur Analysis</title>
+<style type="text/css">
+
+body { font-family: Arial, Helvetica, sans-serif;
+  font-size:84%;
+  font-style:normal;
+  font-weight:normal; 
+  color:#000000;
+  background-color:#ffffff;
+  padding:0px;
+  margin:0px;
+  text-align:left;
+  vertical-align:top;
+  border-color:black;
+}
+
+table{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:100%;
+  font-style:normal;
+  font-weight:normal;
+  color:#000000;
+  border-style: none none none none;
+  width:auto;
+}
+
+table.schriftkl{margin:0px;
+  padding:0px;
+  border-width:0px;
+  border-style:none;
+  border-spacing:0px;
+  border-collapse:collapse;
+  empty-cells:show;
+  text-align:right;
+  vertical-align:top;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:80%;
+  font-style:normal;
+  font-weight:normal;
+  color:#000000;
+}
+
+table.stellen{margin:0px;
+  padding:0px;
+  border-width:0px;
+  border-style:none;
+  border-spacing:0px;
+  border-collapse:collapse;
+  empty-cells:show;
+  text-align:right;
+  vertical-align:top;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:80%;
+  font-style:normal;
+  font-weight:normal;
+  color:#000000;
+  background-image:url(images/pixel.gif);
+}
+
+tr{text-align:left;
+  vertical-align:top;
+  margin:0px;
+  padding:0px;
+  border-spacing:0px;
+}
+
+
+td {font-family:Arial,Helvetica,sans-serif;
+  font-size:100%;
+  color:#000000;
+  text-align:left;
+  vertical-align:top;
+  margin:0px;
+  padding:0px;
+  border-width: 0px 0px 0px 0px;
+}
+
+.bold {font-family:Arial,Helvetica,sans-serif;
+  font-size:100%;
+  font-weight:bold;
+  color:#000000;
+  text-align:left;
+  vertical-align:top;
+  margin:0px;
+  padding:0px;
+  border-width:0px;
+  border-style:none;
+}
+
+td.pfad {font-family:Arial,Helvetica,sans-serif;
+  font-size:80%;
+  font-weight:normal;
+  color:#000000;
+  text-align:left;
+  vertical-align:top;
+  margin:0px;
+  padding:0px;
+  border-width:0px;
+  border-style:none;
+}
+
+td.redaktionslink {font-family:Arial,Helvetica,sans-serif;
+  font-size:100%;
+  padding:10px;
+  text-align:left;
+  vertical-align:top;
+  border-style:none;
+}
+
+td.redaktionslinkright {font-family:Arial,Helvetica,sans-serif;
+  font-size:100%;
+  padding:10px;
+  text-align:right;
+  vertical-align:top;
+  border-style:none;
+}
+
+.respname {
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:80%;
+  text-align:right;
+  vertical-align:top;
+  margin:0px;
+  padding:0px;
+  border-width:0px;
+  border-style:none;
+}
+
+td.nav1{background-color:#F5F4F3;
+  font-family:Arial,Helvetica,sans-serif;
+
+  font-style:normal;
+  font-weight:bold;
+  color:#000000;
+  padding:5px;
+  line-height:14px;
+  padding-left:10px;
+}
+
+td.nav1a{background-color:#999999;
+  font-family:Arial,Helvetica,sans-serif;
+
+  font-style:normal;
+  font-weight:bold;
+  color:#ffffff;
+  padding:5px;
+  line-height:14px;
+  padding-left:10px;
+}
+
+td.nav2{
+  background-color:#FFFFFF;
+  font-family:Arial, Helvetica, sans-serif;
+
+  font-style:normal;
+  font-weight:bold;
+  color:#999999;
+  padding:5px;
+  padding-left:10px;
+  line-height:14px;
+  text-decoration: underline;
+}
+
+td.nav3{
+  background-color:#FFFFFF;
+  font-family:Arial, Helvetica, sans-serif;
+
+  font-style:normal;
+  font-weight:bold;
+  color:#000000;
+  padding:5px;
+  line-height:13px;
+}
+
+td.nav3a{
+  background-color:#999999;
+  font-family:Arial,Helvetica,sans-serif;
+
+  font-style:normal;
+  font-weight:bold;
+  color:#FFFFFF;
+  padding:5px;
+  line-height:13px;
+}
+
+td.nav4{
+  background-color:#999999;
+  font-family:Arial, Helvetica, sans-serif;
+
+  font-style:normal;
+  font-weight:bold;
+  color:#FFFFFF;
+  padding:5px;
+  line-height:13px;
+}
+
+td.nav5{
+  background-color:#c3c3c2;
+  font-family:Arial, Helvetica, sans-serif;
+
+  font-style:normal;
+  font-weight:bold;
+  color:#000000;
+  padding:2px;
+  line-height:12px;
+}
+
+td.nav5a{
+  background-color:#999999;
+  font-family:Arial, Helvetica, sans-serif;
+
+  font-style:normal;
+  font-weight:bold;
+  color:#ffffff;
+  padding:2px;
+  line-height:12px; 
+}
+
+.navlink1 { 
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:100%;
+  font-style:normal;
+  font-weight:bold;
+  color:#000000;
+}
+
+.navlink1a { 
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:100%;
+  font-style:normal;
+  font-weight:bold;
+  color:#ffffff;
+}
+
+.navlink2 {
+  background-color:#FFFFFF;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:100%;
+  font-style:normal;
+  font-weight:bold;
+  color:#999999;
+}
+
+.navlink3 { 
+  background-color:#FFFFFF;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:90%;
+  font-style:normal;
+  font-weight:bold;
+  color:#000000;
+}
+
+.navlink3a {
+  background-color:#999999;  
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:90%;
+  font-style:normal;
+  font-weight:bold;
+  color:#FFFFFF;
+}
+
+.navlink4 { 
+  background-color:#999999;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:90%;
+  font-style:normal;
+  font-weight:bold;
+  color:#FFFFFF;
+}
+
+.navlink5 {
+  background-color:#c3c3c2;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:90%;
+  font-style:normal;
+  font-weight:bold;
+  color:#000000;
+}
+
+.navlink5a {  
+  background-color:#999999;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:90%;
+  font-style:normal;
+  font-weight:bold;
+  color:#ffffff;
+}
+
+
+
+
+td.veranstaltung{ background-color:#f9f9fb;
+  color:#000000;
+  margin-bottom:0px;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:0px;
+  padding-top:5px;
+  padding-bottom:0px;
+  padding-left:3px;
+  padding-right:3px; 
+  border-width:1px;
+  border-style:solid;
+  border-color:#B0B1B9;
+  text-align:justify;
+}
+
+td.presse{ background-color:#f9f9fb;
+  color:#000000;
+  margin-bottom:0px;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:0px;
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-left:0px;
+  padding-right:0px; 
+  border-width:1px;
+  border-style:solid;
+  border-color:#B0B1B9;
+  text-align:justify;
+}
+
+.presse{ background-color:#f9f9fb;
+  color:#000000;
+  margin-bottom:0px;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:10px;
+  padding-right:10px; 
+  text-align:justify;
+}
+
+.meldungzeit{
+  background-color:#dadfe5;
+}
+
+td.tag{
+  color:#AAAAAA;
+  font-size:80%;
+  font-style:bold;
+  font-weight:bold;
+  text-align:left;
+}
+
+td.zeit{ 
+  color:#AAAAAA;
+  font-size:80%;
+  font-style:bold;
+  text-align:left;
+}
+
+td.time{ 
+  background-image:url(standard/time.gif);
+  align:left;
+  color:#AAAAAA;
+  padding:0px;
+  margin:0px;
+  text-align:center;
+  font-size:80%;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:bold;
+}
+
+.time{ 
+  background-image:url(standard/time.gif);
+  align:left;
+  color:#AAAAAA;
+  padding:0px;
+  margin:0px;
+  text-align:center;
+  font-size:80%;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:bold;
+}
+
+td.naviedit { 
+  font-size:45px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:bold;
+  color:#08257C;
+  margin-top:0px;
+  margin-bottom:16px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+  text-align:right;
+}
+
+.re {
+  text-align:right;
+  vertical-align:top;
+  align:right;
+}
+
+.p { 
+  font-size: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#000000;
+  text-align:left;
+  vertical-align:top;
+  margin-top: 12px;
+  margin-bottom:12px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+  line-height:18px;
+}
+
+td.schrkl{
+  font-size:80%;
+  color:#000000;
+  padding:0px;
+  font-weight:normal;
+}
+
+.rebold{
+  font-size:80%;
+  color:#000000;
+  padding:0px;
+  font-weight:bold;
+}
+
+.info{
+  font-size:80%;
+  color:#C5C5C5;
+  padding:0px;
+  font-weight:bold;
+}
+
+.relink { 
+  font-size: 80%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#DA6C24;
+}
+
+.epozpfad { 
+  font-size:120%;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:bold;
+  color:#08257C;
+  margin-top:0px;
+  margin-bottom:16px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+
+
+a:link {font-size: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#DA6C24;
+  text-align:left;
+  margin-top: 12px;
+  margin-bottom:12px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+  text-decoration: none;}
+
+a:visited {font-size: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#DA6C24;
+  text-align:left;
+  margin-top: 12px;
+  margin-bottom:12px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+  text-decoration: none;
+}
+
+a:active {font-size: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#DA6C24;
+  text-align:left;
+  margin-top: 12px;
+  margin-bottom:12px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+  text-decoration: none;
+}
+
+a:hover {font-size: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#DA6C24;
+  text-align:left;
+  margin-top: 12px;
+  margin-bottom:12px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+  text-decoration: none;
+}
+
+p { font-size: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#000000;
+  text-align:left;
+  vertical-align:top;
+  margin-top: 12px;
+  margin-bottom:12px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+h1 { font-size: 140%;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#AAAAAA;
+  margin-top:0px;
+  margin-bottom:16px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+h2 { font: 120% Arial,Helvetica,sans-serif;
+  color:#666666;
+  margin-top:16px;
+  margin-bottom:16px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+h3 { font-size:100%;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:bold;
+  color:#666666;
+  margin-top:6px;
+  margin-bottom:6px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+h4 { font-size:100%;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:bold;
+  color:#999999;
+  margin-top:6px;
+  margin-bottom:6px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+h5 { font-size:80%;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:bold;
+  color:#999999;
+  margin-top:6px;
+  margin-bottom:6px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+h6 { font-size:100%;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:bold;
+  color:#999999;
+  margin-top:3px;
+  margin-bottom:2px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+h7 { font-size:140%;
+  font-family:Arial,Helvetica,sans-serif;
+font-weight:bold;
+  color:#666666;
+  margin-top:0px;
+  margin-bottom:16px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+h8 { font-size:100%;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:bold;
+  color:#000000;
+  margin-top:6px;
+  margin-bottom:6px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+ul,ol,li { 
+  font-family: Arial, Helvetica, sans-serif;
+  color:#000000;
+  text-align:left;
+  vertical-align:top;
+}
+
+/* fuer eingerueckte links im Text */
+
+.link { 
+    font-family:Arial, Helvetica, sans-serif;
+    color:#DA6C24;
+    text-align:left;
+    vertical-align:top;
+    margin-top: 12px;
+    margin-bottom:12px;
+    margin-right:20px;
+    margin-left:20px;
+    padding:0px;
+}
+
+/* fuer linksausgerichtetes Datum */
+
+.date { font-size: x-small;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#000000;
+  text-align:right;
+  vertical-align:top;
+  margin-top: 0px;
+  margin-bottom:12px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+.center { font-size: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#000000;
+  text-align:center;
+  vertical-align:top;
+  margin-top: 12px;
+  margin-bottom:12px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:0px;
+}
+
+.unterschrift { font-size: 80%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#000000;
+  text-align:center;
+  padding:0px;
+}
+
+.presse { font-size: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#000000;
+  bordercolor:#000000;
+  border:1px;
+  text-align:left;
+  vertical-align:top;
+  margin-top: 12px;
+  margin-bottom:12px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:5px;
+}
+
+p.invisible{
+  color:#FFFFFF;
+}
+
+.linkrechts{ 
+  color:#000000;
+  font-size:80%;
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:bold;
+  text-align:right;
+}
+
+</style>
+</head>
+<body>
+<div class="document" id="computergestutzte-mathematik-zur-analysis">
+<h1 class="title">Computergest&#252;tzte Mathematik zur Analysis</h1>
+<h2 class="subtitle" id="ubersicht-uber-die-verwendeten-befehle-nach-lektionen-geordnet">&#220;bersicht &#252;ber die verwendeten Befehle, nach Lektionen geordnet</h2>
+
+<!-- -*- coding: utf-8 -*- -->
+<div class="contents topic" id="inhaltsverzeichnis">
+<p class="topic-title first">Inhaltsverzeichnis</p>
+<ul class="simple">
+<li><a class="reference internal" href="#lektion-1" id="id1">Lektion 1</a><ul>
+<li><a class="reference internal" href="#arithmetik" id="id2">Arithmetik</a></li>
+<li><a class="reference internal" href="#variablen" id="id3">Variablen</a></li>
+<li><a class="reference internal" href="#elementare-funktionen" id="id4">elementare Funktionen</a></li>
+<li><a class="reference internal" href="#vereinfachungen" id="id5">Vereinfachungen</a></li>
+<li><a class="reference internal" href="#hilfsprogramme" id="id6">Hilfsprogramme</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-2" id="id7">Lektion 2</a><ul>
+<li><a class="reference internal" href="#dito-operator" id="id8">dito Operator</a></li>
+<li><a class="reference internal" href="#summen-und-grenzwerte" id="id9">Summen und Grenzwerte</a></li>
+<li><a class="reference internal" href="#ableitungen-und-integrale" id="id10">Ableitungen und Integrale</a></li>
+<li><a class="reference internal" href="#ersetzungen" id="id11">Ersetzungen</a></li>
+<li><a class="reference internal" href="#ausdrucke-vs-funktionen" id="id12">Ausdr&#252;cke vs Funktionen</a></li>
+<li><a class="reference internal" href="#funktionsgraphen" id="id13">Funktionsgraphen</a></li>
+<li><a class="reference internal" href="#maple-rechnet-komplex" id="id14">Maple rechnet komplex</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-3" id="id15">Lektion 3</a><ul>
+<li><a class="reference internal" href="#d-funktionsgraphen" id="id16">3D-Funktionsgraphen</a></li>
+<li><a class="reference internal" href="#listen-und-mengen" id="id17">Listen und Mengen</a></li>
+<li><a class="reference internal" href="#schleifen" id="id18">Schleifen</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-4" id="id19">Lektion 4</a><ul>
+<li><a class="reference internal" href="#automatisches-losen-von-gleichungen" id="id20">automatisches L&#246;sen von Gleichungen</a></li>
+<li><a class="reference internal" href="#pakete" id="id21">Pakete</a></li>
+<li><a class="reference internal" href="#graphen-von-losungsmengen" id="id22">Graphen von L&#246;sungsmengen</a></li>
+<li><a class="reference internal" href="#losen-von-polynomgleichungen" id="id23">L&#246;sen von Polynomgleichungen</a></li>
+<li><a class="reference internal" href="#losung-transzendenter-gleichungen" id="id24">L&#246;sung transzendenter Gleichungen</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-05" id="id25">Lektion 05</a><ul>
+<li><a class="reference internal" href="#trage-operatoren" id="id26">Tr&#228;ge Operatoren</a></li>
+<li><a class="reference internal" href="#zusammenfassen" id="id27">Zusammenfassen</a></li>
+<li><a class="reference internal" href="#trigonometrische-funktionen" id="id28">Trigonometrische Funktionen</a></li>
+<li><a class="reference internal" href="#potenzfunktionen" id="id29">Potenzfunktionen</a></li>
+<li><a class="reference internal" href="#integration" id="id30">Integration</a></li>
+<li><a class="reference internal" href="#gesteuerte-integration" id="id31">gesteuerte Integration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-06" id="id32">Lektion 06</a><ul>
+<li><a class="reference internal" href="#grenzwerte" id="id33">Grenzwerte</a></li>
+<li><a class="reference internal" href="#reihen" id="id34">Reihen</a></li>
+<li><a class="reference internal" href="#unendliche-produkte" id="id35">Unendliche Produkte</a></li>
+<li><a class="reference internal" href="#taylorpolynom" id="id36">Taylorpolynom</a></li>
+<li><a class="reference internal" href="#das-komplex-bild" id="id37">Das komplex Bild</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-07" id="id38">Lektion 07</a><ul>
+<li><a class="reference internal" href="#vektoren-und-matrizen" id="id39">Vektoren und Matrizen</a></li>
+<li><a class="reference internal" href="#matrixplot" id="id40">Matrixplot</a></li>
+<li><a class="reference internal" href="#lineare-gleichungssysteme" id="id41">Lineare Gleichungssysteme</a></li>
+<li><a class="reference internal" href="#zeilenweise-manipulation" id="id42">Zeilenweise Manipulation</a></li>
+<li><a class="reference internal" href="#normalformen" id="id43">Normalformen</a></li>
+<li><a class="reference internal" href="#andere-operationen-mit-matrizen" id="id44">Andere Operationen mit Matrizen</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-08" id="id45">Lektion 08</a><ul>
+<li><a class="reference internal" href="#ebene-parametrische-plots" id="id46">ebene parametrische Plots</a></li>
+<li><a class="reference internal" href="#der-arcustangens" id="id47">Der Arcustangens</a></li>
+<li><a class="reference internal" href="#polygonzuge" id="id48">Polygonz&#252;ge</a></li>
+<li><a class="reference internal" href="#datenimport" id="id49">Datenimport</a></li>
+<li><a class="reference internal" href="#raumkurven" id="id50">Raumkurven</a></li>
+<li><a class="reference internal" href="#flachen-im-raum" id="id51">Fl&#228;chen im Raum</a></li>
+<li><a class="reference internal" href="#ableitungen-von-vektorfunktionen" id="id52">Ableitungen von Vektorfunktionen</a></li>
+<li><a class="reference internal" href="#gradienten-und-der-laplace-operator" id="id53">Gradienten und der Laplace-Operator</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-9" id="id54">Lektion 9</a><ul>
+<li><a class="reference internal" href="#norm-eines-vektors" id="id55">Norm eines Vektors</a></li>
+<li><a class="reference internal" href="#das-kreuprodukt" id="id56">Das Kreuprodukt</a></li>
+<li><a class="reference internal" href="#vektorfelder" id="id57">Vektorfelder</a></li>
+<li><a class="reference internal" href="#taylorpolynom-in-mehreren-veranderlichen" id="id58">Taylorpolynom in mehreren Ver&#228;nderlichen</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-10" id="id59">Lektion 10</a><ul>
+<li><a class="reference internal" href="#hessematrix-divergenz-und-rotation" id="id60">Hessematrix, Divergenz und Rotation</a></li>
+<li><a class="reference internal" href="#definitheit" id="id61">Definitheit</a></li>
+<li><a class="reference internal" href="#polarkoordinaten" id="id62">Polarkoordinaten</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-11" id="id63">Lektion 11</a><ul>
+<li><a class="reference internal" href="#extrema-unter-nebenbedingungen" id="id64">Extrema unter Nebenbedingungen</a></li>
+<li><a class="reference internal" href="#zeichenkettenverarbeitung-und-plotverschonerung" id="id65">Zeichenkettenverarbeitung und Plotversch&#246;nerung</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-12" id="id66">Lektion 12</a><ul>
+<li><a class="reference internal" href="#gewohnliche-differentialgleichungen" id="id67">Gew&#246;hnliche Differentialgleichungen</a></li>
+<li><a class="reference internal" href="#hohere-ordnung" id="id68">H&#246;here Ordnung</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-13" id="id69">Lektion 13</a><ul>
+<li><a class="reference internal" href="#die-besselsche-differentialgleichung" id="id70">Die Besselsche Differentialgleichung</a></li>
+<li><a class="reference internal" href="#bewegte-bilder" id="id71">Bewegte Bilder</a></li>
+<li><a class="reference internal" href="#ausdrucke" id="id72">Ausdrucke</a></li>
+<li><a class="reference internal" href="#prozeduren-und-verzweigungen" id="id73">Prozeduren und Verzweigungen</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lektion-14" id="id74">Lektion 14</a><ul>
+<li><a class="reference internal" href="#zufallszahlen" id="id75">Zufallszahlen</a></li>
+<li><a class="reference internal" href="#fourierreihen" id="id76">Fourierreihen</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="lektion-1">
+<h1>Lektion 1</h1>
+<div class="section" id="arithmetik">
+<h2>Arithmetik</h2>
+<ul>
+<li><p class="first">Befehle werden mit <tt class="docutils literal">;</tt>
+oder <tt class="docutils literal">:</tt> abgeschlossen.  Im
+ersten Fall wird das Ergebnis angezeigt, im zweiten nicht.
+Zeilenende impliziert <tt class="docutils literal">;</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">+, <span class="pre">-,</span> *, /, ^</tt></p>
+<p>arithmetische Operatoren</p>
+</li>
+<li><p class="first"><tt class="docutils literal">!</tt></p>
+<p>Faktorielle</p>
+</li>
+<li><p class="first"><tt class="docutils literal">evalf(</tt> <em>x</em> <tt class="docutils literal">)</tt></p>
+<p>numerische Auswertung von <em>x</em> auf 10 g&#252;ltige Stellen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">evalf(</tt> <em>x</em> <tt class="docutils literal">,</tt> <em>n</em> <tt class="docutils literal">)</tt></p>
+<p>numerische Auswertung von <em>x</em> auf <em>n</em> g&#252;ltige Stellen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">Digits</tt> := <em>n</em></p>
+<p>setzt die Genauigkeit auf <em>n</em> Stellen</p>
+</li>
+</ul>
+</div>
+<div class="section" id="variablen">
+<h2>Variablen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">:=</tt></p>
+<p>Zuweisung</p>
+</li>
+<li><p class="first"><tt class="docutils literal">=</tt></p>
+<p>Vergleichsoperator (sp&#228;ter)</p>
+</li>
+<li><p class="first"><em>a</em> <tt class="docutils literal">:= '</tt> <em>a</em> <tt class="docutils literal">'</tt></p>
+<p>Aufhebung einer Zuweisung</p>
+</li>
+</ul>
+</div>
+<div class="section" id="elementare-funktionen">
+<h2>elementare Funktionen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">sqrt</tt></p>
+<p>Quadratwurzel</p>
+</li>
+<li><p class="first"><tt class="docutils literal">sin, cos, tan, cot</tt></p>
+<p>trigonometrische Funktionen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">arcsin, arccos, arctan, arccot</tt></p>
+<p>inverse trigonometrische Funktionen</p>
+</li>
+</ul>
+<!-- ``arctan`` siehe auch in `Der Arcustangens`_ -->
+<ul>
+<li><p class="first"><tt class="docutils literal">log, ln</tt></p>
+<p>nat&#252;rlicher Logarithmus</p>
+</li>
+<li><p class="first"><tt class="docutils literal">exp</tt></p>
+<p>Exponentialfunktion</p>
+</li>
+<li><p class="first"><tt class="docutils literal">Pi</tt></p>
+<p>Ludolfsche Zahl pi</p>
+</li>
+</ul>
+</div>
+<div class="section" id="vereinfachungen">
+<h2>Vereinfachungen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">simplify</tt></p>
+<p>allgemeiner Vereinfachungsbefehl, siehe auch in <a class="reference internal" href="#ersetzungen">Ersetzungen</a></p>
+</li>
+<li><p class="first"><tt class="docutils literal">normal</tt></p>
+<p>K&#252;rzen von Br&#252;chen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">normal(</tt> <em>f</em> <tt class="docutils literal">, expanded)</tt></p>
+<p>dasselbe, aber Z&#228;hler und Nenner werden expandiert</p>
+</li>
+<li><p class="first"><tt class="docutils literal">expand</tt></p>
+<p>expandiert Polynome, trigonometrische Funktionen usw.</p>
+</li>
+<li><p class="first"><tt class="docutils literal">factor</tt></p>
+<p>faktorisiert Polynome</p>
+</li>
+</ul>
+</div>
+<div class="section" id="hilfsprogramme">
+<h2>Hilfsprogramme</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">restart</tt></p>
+<p>l&#246;scht alle Variablen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">lprint</tt></p>
+<p>Ausgabe in 1D</p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-2">
+<h1>Lektion 2</h1>
+<div class="section" id="dito-operator">
+<h2>dito Operator</h2>
+<ul>
+<li><p class="first">%</p>
+<p>Ergebnis der letzten Berechnung</p>
+</li>
+<li><p class="first">Zugriff auf label ist nur mit der Maus m&#246;glich</p>
+</li>
+</ul>
+</div>
+<div class="section" id="summen-und-grenzwerte">
+<h2>Summen und Grenzwerte</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">sum(</tt> <em>f</em>, <em>n</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">)</tt></p>
+<p>Summe von <em>f</em> f&#252;r <em>n</em> von <em>a</em> bis <em>b</em>, dabei ist <em>f</em> ein Ausdruck in <em>n</em></p>
+</li>
+<li><p class="first"><tt class="docutils literal">infinity</tt></p>
+<p>Konstante unendlich</p>
+</li>
+<li><p class="first"><tt class="docutils literal">limit(</tt> <em>f</em> <tt class="docutils literal">,</tt> <em>x</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">)</tt></p>
+<p>Grenzwert des Ausdrucks <em>f</em> in <em>x</em> = <em>a</em></p>
+</li>
+<li><p class="first"><tt class="docutils literal">limit(</tt> <em>f</em> <tt class="docutils literal">,</tt> <em>x</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">, right)</tt></p>
+<p>Grenzwert des Ausdrucks <em>f</em> in <em>x</em> = <em>a</em> von rechts (von links
+mit <tt class="docutils literal">left</tt>)</p>
+</li>
+</ul>
+</div>
+<div class="section" id="ableitungen-und-integrale">
+<h2>Ableitungen und Integrale</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">diff(</tt> <em>f</em> <tt class="docutils literal">,</tt> <em>x</em> <tt class="docutils literal">)</tt></p>
+<p>Ableitung des Ausdrucks <em>f</em> nach <em>x</em></p>
+</li>
+<li><p class="first"><tt class="docutils literal">int(</tt> <em>f</em>, <em>x</em> <tt class="docutils literal">)</tt></p>
+<p>Stammfunktion des Ausdrucks <em>f</em> bez&#252;glich der Variablen <em>x</em></p>
+</li>
+<li><p class="first"><tt class="docutils literal">int(</tt> <em>f</em>, <em>x</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">)</tt></p>
+<p>bestimmtes Integral</p>
+</li>
+<li><p class="first"><tt class="docutils literal">Int</tt></p>
+<p>Integral nur anzeigen</p>
+</li>
+</ul>
+</div>
+<div class="section" id="ersetzungen">
+<h2>Ersetzungen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">eval(</tt> <em>expr</em> <tt class="docutils literal">, {</tt> <em>a</em> <tt class="docutils literal">=</tt> <em>A</em> <tt class="docutils literal">,</tt> <em>b</em> <tt class="docutils literal">=</tt> <em>B</em> <tt class="docutils literal">,</tt>
+... <tt class="docutils literal">,</tt> <em>z</em> <tt class="docutils literal">=</tt> <em>Z</em> <tt class="docutils literal">})</tt></p>
+<p>in <em>expr</em> werden <em>a</em>, <em>b</em>, ..., <em>z</em> durch  <em>A</em>, <em>B</em>, ..., <em>Z</em> ersetzt.</p>
+</li>
+<li><p class="first"><tt class="docutils literal">simplify(</tt> <em>epr</em> <tt class="docutils literal">, {</tt> <em>a</em> <tt class="docutils literal">=</tt> <em>A</em> <tt class="docutils literal">,</tt> <em>b</em> <tt class="docutils literal">=</tt> <em>B</em> <tt class="docutils literal">,</tt>
+... <tt class="docutils literal">,</tt> <em>z</em> <tt class="docutils literal">=</tt> <em>Z</em> <tt class="docutils literal">})</tt></p>
+<p>Vereinfachung unter den angegebenen Nebenbedingungen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">collect(</tt> <em>p</em> <tt class="docutils literal">,</tt> <em>x</em> <tt class="docutils literal">)</tt></p>
+<p>fasst im Polynom <em>p</em> alle <em>x</em>-Potenzen zusammen (<em>p</em> muss
+expandiert sein)</p>
+</li>
+</ul>
+</div>
+<div class="section" id="ausdrucke-vs-funktionen">
+<h2>Ausdr&#252;cke vs Funktionen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">(</tt> <em>a</em> <tt class="docutils literal">,</tt> <em>b</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt> <em>z</em> <tt class="docutils literal">) <span class="pre">-&gt;</span></tt> <em>expr</em></p>
+<p>Funktion der Variablen <em>a</em>, <em>b</em>, ..., <em>z</em>, deren Funktionsvorschrift
+durch <em>expr</em> gegeben ist</p>
+</li>
+<li><p class="first"><tt class="docutils literal">unapply(</tt> <em>expr</em> <tt class="docutils literal">,</tt> <em>a</em> <tt class="docutils literal">,</tt> <em>b</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt> <em>z</em> <tt class="docutils literal">)</tt></p>
+<p>wandelt den Ausdruck <em>expr</em> in eine Funktion der Variablen <em>a</em>, <em>b</em>,
+..., <em>z</em> um</p>
+</li>
+</ul>
+</div>
+<div class="section" id="funktionsgraphen">
+<h2>Funktionsgraphen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">plot(</tt> <em>expr</em> <tt class="docutils literal">,</tt> <em>x</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">)</tt></p>
+<p>zeigt den Graph des Ausdrucks <em>expr</em> f&#252;r <em>x</em> von <em>a</em> bis <em>b</em></p>
+</li>
+<li><p class="first"><tt class="docutils literal">plot(</tt> <em>f</em> <tt class="docutils literal">,</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">)</tt></p>
+<p>zeigt den Graph der Funktion <em>f</em> &#252;ber dem Intervall [<em>a</em>, <em>b</em>]</p>
+</li>
+<li><p class="first"><tt class="docutils literal">plot([</tt> <em>ex_1</em> <tt class="docutils literal">,</tt> <em>ex_2</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt> <em>ex_n</em> <tt class="docutils literal">],</tt> <em>x</em>
+<tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">, color = [</tt> <em>farbe_1</em> <tt class="docutils literal">,</tt> <em>farbe_2</em>
+<tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt> <em>farbe_n</em> <tt class="docutils literal">])</tt></p>
+<p>zeigt die Graphen der Ausdr&#252;cke <em>ex_1</em>, <em>ex_2</em>, ..., <em>ex_n</em> f&#252;r
+<em>x</em> von <em>a</em> bis <em>b</em> in einem Fenster, jeden in der angegebenen
+Farbe</p>
+</li>
+<li><p class="first"><tt class="docutils literal">plot([</tt> <em>f_1</em> <tt class="docutils literal">,</tt> <em>f_2</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt> <em>f_n</em> <tt class="docutils literal">],</tt> <em>a</em> <tt class="docutils literal">..</tt>
+<em>b</em> <tt class="docutils literal">, color = [</tt> <em>farbe_1</em> <tt class="docutils literal">,</tt> <em>farbe_2</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt>
+<em>farbe_n</em> <tt class="docutils literal">])</tt></p>
+<p>dasselbe f&#252;r Funktionen</p>
+</li>
+<li><p class="first">hinter dem Argumentbereich kann ein Wertebereich in der
+gleichen Form angegeben werden</p>
+</li>
+<li><p class="first">Die folgenden Optionen k&#246;nnen nachgestellt werden</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">axes = boxed</tt></p>
+<p>Koordinatenachsen; Alternativen sind <tt class="docutils literal">normal</tt>, <tt class="docutils literal">framed</tt>, <tt class="docutils literal">none</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">discont = true</tt></p>
+<p>Suche nach Sprungstellen einschalten</p>
+</li>
+<li><p class="first"><tt class="docutils literal">thickness =</tt> <em>n</em></p>
+<p>Strichdicke, erlaubt sind <em>n</em> = 0,1,2,3</p>
+</li>
+<li><p class="first"><tt class="docutils literal">numpoints =</tt> <em>n</em></p>
+<p><em>n</em> Funktionsauswertungen verwenden</p>
+</li>
+<li><p class="first"><tt class="docutils literal">scaling = constrained</tt></p>
+<p>alle Achsen verwenden denselben Ma&#223;stab</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- siehe auch `ebene parametrische Plots`_ und `logplot` im -->
+<!-- Abschnitt Datenimport_ -->
+</div>
+<div class="section" id="maple-rechnet-komplex">
+<h2>Maple rechnet komplex</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">I</tt></p>
+<p>imagin&#228;re Einheit</p>
+</li>
+<li><p class="first"><tt class="docutils literal">sqrt(</tt> <em>x</em> <tt class="docutils literal">)</tt></p>
+<p>Quadratwurzel</p>
+</li>
+<li><p class="first"><tt class="docutils literal">Re(</tt> <em>z</em> <tt class="docutils literal">), Im(</tt> <em>z</em> <tt class="docutils literal">)</tt></p>
+<p>Real- und Imagin&#228;rteil</p>
+</li>
+<li><p class="first"><tt class="docutils literal">conjugate(</tt> <em>z</em> <tt class="docutils literal">)</tt></p>
+<p>komplex Konjugierte</p>
+</li>
+<li><p class="first"><tt class="docutils literal">abs(</tt> <em>z</em> <tt class="docutils literal">)</tt></p>
+<p>Absolutbetrag</p>
+</li>
+</ul>
+<ul>
+<li><p class="first"><tt class="docutils literal">csgn</tt></p>
+<p>komplexe Vorzeichenfunktion</p>
+</li>
+</ul>
+<ul>
+<li><p class="first"><em>befehl</em> <tt class="docutils literal">assuming</tt> <em>property_1</em> <tt class="docutils literal">,</tt> <em>property_2</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt>
+<em>property_n</em></p>
+<p><em>befehl</em> wird unter den zus&#228;tzlichen Annahmen <em>property_1</em>, ...,
+<em>property_n</em> ausgef&#252;hrt</p>
+<p>wichtige Beispiele f&#252;r properties:</p>
+<ul class="simple">
+<li><em>x</em> <tt class="docutils literal">&gt; 2</tt></li>
+<li><em>y</em> <tt class="docutils literal">&lt;=</tt> <em>x</em></li>
+<li><em>x</em> <tt class="docutils literal">::real</tt></li>
+<li><em>x</em> <tt class="docutils literal">::positive</tt></li>
+<li><em>n</em> <tt class="docutils literal">::integer</tt></li>
+<li><em>n</em> <tt class="docutils literal">::odd</tt></li>
+<li><em>n</em> <tt class="docutils literal">::even</tt></li>
+</ul>
+</li>
+<li><p class="first"><tt class="docutils literal">evalc(</tt> <em>ausdruck</em> <tt class="docutils literal">)</tt></p>
+<p>ausdruck wird unter der Annahme ausgewertet, dass alle
+auftretenden Variablen reell sind</p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-3">
+<h1>Lektion 3</h1>
+<div class="section" id="d-funktionsgraphen">
+<h2>3D-Funktionsgraphen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">plot3d(</tt> <em>expr</em> <tt class="docutils literal">,</tt> <em>x</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">,</tt>
+<em>y</em> <tt class="docutils literal">=</tt> <em>c</em> <tt class="docutils literal">..</tt> <em>d</em> <tt class="docutils literal">)</tt></p>
+<p>zeigt den Graph des Ausdrucks <em>expr</em> f&#252;r <em>x</em> von <em>a</em> bis <em>b</em> und
+<em>y</em> von <em>c</em> bis <em>d</em></p>
+</li>
+<li><p class="first"><tt class="docutils literal">plot3d(</tt> <em>f</em> <tt class="docutils literal">,</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">,</tt> <em>c</em> <tt class="docutils literal">..</tt> <em>d</em> <tt class="docutils literal">)</tt></p>
+<p>zeigt den Graph der Funktion <em>f</em> &#252;ber dem Rechteck [<em>a</em>,
+<em>b</em>]x[<em>c</em>, <em>d</em>]</p>
+</li>
+<li><p class="first">Zus&#228;tzliche Optionen nur f&#252;r 3D</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">view =</tt> <em>e</em> <tt class="docutils literal">..</tt> <em>f</em></p>
+<p>Wertebereich auf [<em>e</em>, <em>f</em>] einschr&#228;nken</p>
+</li>
+<li><p class="first"><tt class="docutils literal">shading = zhue</tt></p>
+<p>h&#246;henabh&#228;ngige Farbwerte</p>
+</li>
+<li><p class="first"><tt class="docutils literal">style = patchcontour</tt></p>
+<p>H&#246;henlinien, Alternativen: <tt class="docutils literal">patch</tt>, <tt class="docutils literal">patchnogrid</tt>, <tt class="docutils literal">wireframe</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">transparency =</tt> <em>t</em></p>
+<p>Transparenz festlegen, <em>t</em> liegt zwischen 0 und 1, dabei f&#252;hrt
+1 zu einem vollst&#228;ndig durchsichtigen Plot</p>
+</li>
+<li><p class="first"><tt class="docutils literal">orientation = [</tt> <em>phi</em> <tt class="docutils literal">,</tt> <em>psi</em> <tt class="docutils literal">]</tt></p>
+<p>Ort des Betrachters festlegen</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="listen-und-mengen">
+<h2>Listen und Mengen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">[</tt> <em>a</em> <tt class="docutils literal">,</tt> <em>b</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt> <em>z</em> <tt class="docutils literal">]</tt></p>
+<p>Liste</p>
+</li>
+<li><p class="first"><tt class="docutils literal">{</tt> <em>a</em> <tt class="docutils literal">,</tt> <em>b</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt> <em>z</em> <tt class="docutils literal">}</tt></p>
+<p>Menge</p>
+</li>
+<li><p class="first"><em>a</em> <tt class="docutils literal">,</tt> <em>b</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt> <em>z</em></p>
+<p>Folge (Achtung: eine Folge wird nicht als Einzelobjekt
+verstanden)</p>
+</li>
+<li><p class="first"><tt class="docutils literal">seq(</tt> <em>ausdr</em> <tt class="docutils literal">,</tt> <em>j</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">)</tt></p>
+<p>Erzeugung einer Folge</p>
+</li>
+<li><p class="first"><tt class="docutils literal">nops(</tt> <em>liste</em> <tt class="docutils literal">)</tt></p>
+<p>Anzahl der Elemente; statt <em>liste</em> ist auch eine Menge oder
+eine Folge zul&#228;ssig</p>
+</li>
+<li><p class="first"><tt class="docutils literal">convert(</tt> <em>expr</em>, <em>type</em> <tt class="docutils literal">)</tt></p>
+<p>Umwandlung des Ausdrucks <em>expr</em> in ein Objekt des Typs <em>type</em>.
+Wichtige Typen sind:</p>
+<ul class="simple">
+<li>list</li>
+</ul>
+<p>Liste</p>
+<ul class="simple">
+<li>set</li>
+</ul>
+<p>Menge</p>
+<ul class="simple">
+<li><tt class="docutils literal">'+'</tt></li>
+</ul>
+<p>Summe</p>
+<p>siehe auch <a class="reference internal" href="#trigonometrische-funktionen">Trigonometrische Funktionen</a></p>
+</li>
+</ul>
+</div>
+<div class="section" id="schleifen">
+<h2>Schleifen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">for</tt> <em>l</em> <tt class="docutils literal">in</tt> <em>list</em> <tt class="docutils literal">do;</tt> <em>befehl_1</em> <tt class="docutils literal">;</tt>
+... <em>befehl_n</em> <tt class="docutils literal">; end do;</tt></p>
+<p>Schleife &#252;ber alle Elemente der Liste <em>list</em></p>
+</li>
+<li><p class="first"><tt class="docutils literal">for</tt> <em>i</em> <tt class="docutils literal">from</tt> <em>a</em> <tt class="docutils literal">to</tt> <em>b</em> <tt class="docutils literal">do;</tt>
+<em>befehl_1</em> <tt class="docutils literal">;</tt> ... <em>befehl_n</em> <tt class="docutils literal">; end do;</tt></p>
+<p>Schleife f&#252;r <em>i</em> von <em>a</em> bis <em>b</em>, beide einschlie&#223;lich</p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-4">
+<h1>Lektion 4</h1>
+<div class="section" id="automatisches-losen-von-gleichungen">
+<h2>automatisches L&#246;sen von Gleichungen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">solve(</tt> <em>Glg</em> <tt class="docutils literal">,</tt> <em>x</em> <tt class="docutils literal">)</tt></p>
+<p>l&#246;st Gleichung <em>Glg</em> nach der Variablen <em>x</em></p>
+</li>
+<li><p class="first"><tt class="docutils literal">solve(</tt> <em>Gls</em> <tt class="docutils literal">,</tt> <em>vars</em> <tt class="docutils literal">)</tt></p>
+<p>l&#246;st Gleichungssystem <em>Gls</em> nach den Variablen
+<em>vars</em>, dabei sind <em>Gls</em> und <em>vars</em> Mengen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">solve(</tt> ..., <tt class="docutils literal">Explicit)</tt></p>
+<p><tt class="docutils literal">RootOf</tt>-Notation wird nach M&#246;glichkeit vermieden</p>
+</li>
+<li><p class="first"><tt class="docutils literal">is(</tt> <em>expr</em> <tt class="docutils literal">)</tt></p>
+<p>stellt den Wahrheitsgehalt von <em>expr</em> fest</p>
+</li>
+<li><p class="first"><tt class="docutils literal">fsolve</tt></p>
+<p>wie <tt class="docutils literal">solve</tt>, aber numerisch;</p>
+<p>folgende Optionen</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">complex</tt></p>
+<p>suche auch nach komplexen Nullstellen</p>
+</li>
+<li><p class="first"><em>x</em> <tt class="docutils literal">=</tt> <em>x_0</em></p>
+<p>Startwert der Suche ist x_0</p>
+</li>
+</ul>
+</li>
+<li><p class="first"><tt class="docutils literal">RootOf</tt></p>
+<p>Notation zur Darstellung von L&#246;sungen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">map(</tt> <em>f</em> <tt class="docutils literal">,</tt> <em>liste</em> <tt class="docutils literal">,</tt> <em>opt</em> <tt class="docutils literal">)</tt></p>
+<p>auf alle Elemente von <em>liste</em> wird die Funktion <em>f</em> angewandt;
+<em>opt</em> ist eine Folge von Optionen der Funktion <em>f</em>,
+die auch leer sein darf</p>
+</li>
+</ul>
+</div>
+<div class="section" id="pakete">
+<h2>Pakete</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">with(</tt> <em>paket</em> <tt class="docutils literal">)</tt></p>
+<p>l&#228;dt die Bibliothek <em>paket</em></p>
+</li>
+</ul>
+</div>
+<div class="section" id="graphen-von-losungsmengen">
+<h2>Graphen von L&#246;sungsmengen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">with(plots)</tt></p>
+<p>l&#228;dt das Paket mit speziellen Grafikfunktionen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">implicitplot(</tt> <em>Glg</em> <tt class="docutils literal">,</tt> <em>x</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">,</tt>
+<em>y</em> <tt class="docutils literal">=</tt> <em>c</em> <tt class="docutils literal">..</tt> <em>d</em> <tt class="docutils literal">)</tt></p>
+<p>zeichnet die L&#246;sungsmenge der Gleichung <em>Glg</em> in den
+Variablen <em>x</em> und <em>y</em> im angegebenen Bereich; statt
+einer Gleichung ist auch eine Menge von Gleichungen
+zul&#228;ssig; es d&#252;rfen Plotoptionen angeschlossen werden;
+<tt class="docutils literal">implicitplot</tt> geh&#246;rt zum Paket <tt class="docutils literal">plots</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">plot_real_curve(</tt> <em>p</em> <tt class="docutils literal">,</tt> <em>x</em> <tt class="docutils literal">,</tt> <em>y</em> <tt class="docutils literal">)</tt></p>
+<p>zeichnet die Nullstellen des Polynoms <em>p</em> in den Variablen <em>x</em>
+und <em>y</em>; Plotoptionen sind zul&#228;ssig; <tt class="docutils literal">plot_real_curve</tt> geh&#246;rt
+zum Paket <tt class="docutils literal">algcurves</tt></p>
+</li>
+</ul>
+</div>
+<div class="section" id="losen-von-polynomgleichungen">
+<h2>L&#246;sen von Polynomgleichungen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">&#64;</tt></p>
+<p>Verkn&#252;pfungsoperator</p>
+</li>
+</ul>
+</div>
+<div class="section" id="losung-transzendenter-gleichungen">
+<h2>L&#246;sung transzendenter Gleichungen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">solve(</tt> ..., <tt class="docutils literal">allsolutions)</tt></p>
+<p>bei transzendenten Gleichungen alle L&#246;sungen bestimmen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">about(</tt> <em>x</em> <tt class="docutils literal">)</tt></p>
+<p>bestehende Annahmen &#252;ber <em>x</em> anzeigen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">fsolve(</tt> <em>Glg</em> <tt class="docutils literal">,</tt> <em>x</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">)</tt></p>
+<p>Option von <tt class="docutils literal">fsolve</tt>, um den Suchbereich einzuschr&#228;nken</p>
+</li>
+<li><p class="first"><tt class="docutils literal">series(</tt> <em>expr</em>, <tt class="docutils literal">,</tt> <em>x</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">,</tt> <em>n</em> <tt class="docutils literal">)</tt></p>
+<p>Reihenentwicklung des Ausdrucks <em>expr</em> im Punkt <em>a</em> nach der
+Variablen <em>x</em> zur Ordnung <em>n</em>.  Der Punkt darf <em>infinity</em> sein.</p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-05">
+<h1>Lektion 05</h1>
+<div class="section" id="trage-operatoren">
+<h2>Tr&#228;ge Operatoren</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">Sum, Int, Diff</tt></p>
+<p>Varianten vom <tt class="docutils literal">sum</tt>, <tt class="docutils literal">int</tt>, <tt class="docutils literal">diff</tt>, bei denen Summe, Integral
+und Ableitung nur dargestellt, aber nicht ausgewertet werden</p>
+</li>
+<li><p class="first"><tt class="docutils literal">value</tt></p>
+<p>Befehl zur Auswertung der tr&#228;gen Operatoren</p>
+</li>
+</ul>
+</div>
+<div class="section" id="zusammenfassen">
+<h2>Zusammenfassen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">collect(</tt> <em>poly</em> <tt class="docutils literal">,</tt> <em>var</em> <tt class="docutils literal">)</tt></p>
+<p><em>poly</em> ist ein expandiertes Polynom; die Terme gleicher Potenz in
+<em>var</em> werden zusammengefasst</p>
+</li>
+<li><p class="first"><tt class="docutils literal">collect(</tt> <em>poly</em> <tt class="docutils literal">,</tt> <em>liste</em> <tt class="docutils literal">)</tt></p>
+<p>dasselbe f&#252;r Polynome in mehreren Ver&#228;nderlichen; die zu
+ber&#252;cksichtigenden Ver&#228;nderlichen sind in <em>liste</em> aufgez&#228;hlt und
+werden der Reihe nach abgearbeitet</p>
+</li>
+</ul>
+</div>
+<div class="section" id="trigonometrische-funktionen">
+<h2>Trigonometrische Funktionen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">sin</tt>, <tt class="docutils literal">cos</tt>, <tt class="docutils literal">tan</tt>, <tt class="docutils literal">cot</tt>, <tt class="docutils literal">arcsin</tt>, <tt class="docutils literal">arccos</tt>,
+<tt class="docutils literal">arctan</tt></p>
+<p>Trigonometrische Funktionen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">expand</tt></p>
+<p>Anwendung der Additionstheoreme auf trigonometrische Funktionen</p>
+</li>
+<li><p class="first"><tt class="docutils literal">combine</tt></p>
+<p>Umkehrung von <tt class="docutils literal">expand</tt>, wo sinnvoll</p>
+</li>
+<li><p class="first"><tt class="docutils literal">trigsubs</tt></p>
+<p>schl&#228;gt &#228;quivalente trigonometrische Ausdr&#252;cke vor</p>
+</li>
+<li><p class="first"><tt class="docutils literal">convert(</tt> <em>ausdruck</em> <tt class="docutils literal">, sincos)</tt></p>
+<p>Tangens und exp(<em>ix</em>) werden in Sinus- und Cosinusfunktionen
+umgewandelt</p>
+</li>
+</ul>
+</div>
+<div class="section" id="potenzfunktionen">
+<h2>Potenzfunktionen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">surd(</tt> <em>x</em> <tt class="docutils literal">,</tt> <em>n</em> <tt class="docutils literal">)</tt></p>
+<p>reelle <em>n</em>-te Wurzel aus reellem <em>x</em></p>
+</li>
+</ul>
+</div>
+<div class="section" id="integration">
+<h2>Integration</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">piecewise</tt></p>
+<p>st&#252;ckweise definierter Ausdruck</p>
+</li>
+</ul>
+</div>
+<div class="section" id="gesteuerte-integration">
+<h2>gesteuerte Integration</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">Change(</tt> <em>Int</em> <tt class="docutils literal">,</tt> <em>ersetzung</em> <tt class="docutils literal">)</tt></p>
+<p>Integration durch Substitution, hierbei sind <em>ersetzung</em> die
+Substitution als Gleichung und <em>Int</em> ein unausgewertetes Integral;
+<tt class="docutils literal">Change</tt> ist Bestandteil des Pakets <tt class="docutils literal">IntegrationTools</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Parts(</tt> <em>Int</em> <tt class="docutils literal">,</tt> <em>u</em> <tt class="docutils literal">)</tt></p>
+<p>Partielle Integration, hierbei ist <em>Int</em> ein unausgewertetes
+Integral und <em>u</em> der Faktor, der abgeleitet wird; <tt class="docutils literal">Parts</tt> ist
+Bestandteil des Pakets <tt class="docutils literal">IntegrationTools</tt></p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-06">
+<h1>Lektion 06</h1>
+<div class="section" id="grenzwerte">
+<h2>Grenzwerte</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">Limit</tt></p>
+<p>tr&#228;ger Operator zu <tt class="docutils literal">limit</tt> (s. <a class="reference internal" href="#summen-und-grenzwerte">Summen und Grenzwerte</a>)</p>
+</li>
+</ul>
+</div>
+<div class="section" id="reihen">
+<h2>Reihen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">print</tt></p>
+<p>Ausgabe in normaler Qualit&#228;t (im Gegensatz zu lprint (siehe
+<a class="reference internal" href="#hilfsprogramme">Hilfsprogramme</a>))</p>
+</li>
+<li><p class="first"><tt class="docutils literal">#</tt></p>
+<p>Kommentar</p>
+</li>
+</ul>
+</div>
+<div class="section" id="unendliche-produkte">
+<h2>Unendliche Produkte</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">product(</tt> <em>f</em>, <em>n</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">)</tt></p>
+<p>Produkt &#252;ber <em>f</em> f&#252;r <em>n</em> von <em>a</em> bis <em>b</em>, dabei ist <em>f</em> ein
+Ausdruck in <em>n</em></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Product</tt></p>
+<p>zugeh&#246;riger tr&#228;ger Operator</p>
+</li>
+</ul>
+</div>
+<div class="section" id="taylorpolynom">
+<h2>Taylorpolynom</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">convert(</tt> <em>reihe</em>, <tt class="docutils literal">polynom)</tt></p>
+<p>Entfernen des Terms <tt class="docutils literal">O(</tt> <em>x</em> <tt class="docutils literal">^</tt> <em>n</em> <tt class="docutils literal">)</tt> aus der Ausgabe
+von <tt class="docutils literal">series</tt></p>
+</li>
+</ul>
+</div>
+<div class="section" id="das-komplex-bild">
+<h2>Das komplex Bild</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">display({</tt> <em>pl1</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt> <em>pln</em> <tt class="docutils literal">})</tt></p>
+<p>zeigt die Plots <em>pl1</em> bis <em>pln</em> in einem Bild an.  <tt class="docutils literal">display</tt>
+geh&#246;rt zum Paket <tt class="docutils literal">plots</tt></p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-07">
+<h1>Lektion 07</h1>
+<div class="section" id="vektoren-und-matrizen">
+<h2>Vektoren und Matrizen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">&lt;</tt> <em>a</em>, <em>b</em>, ..., <em>z</em> <tt class="docutils literal">&gt;</tt></p>
+<blockquote>
+<p>Spaltenvektor</p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">&lt;</tt> <em>a</em> <tt class="docutils literal">|</tt> <em>b</em> <tt class="docutils literal">|</tt> ... <tt class="docutils literal">|</tt> <em>z</em> <tt class="docutils literal">&gt;</tt></p>
+<blockquote>
+<p>Zeilenvektor</p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">&lt;</tt> <em>z1</em>, <em>z2</em>, ..., <em>zn</em> <tt class="docutils literal">&gt;</tt></p>
+<blockquote>
+<p>Matrix, aufgebaut aus Zeilenvektoren <em>z1</em>, <em>z2</em>, ...</p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">&lt;</tt> <em>s1</em> <tt class="docutils literal">|</tt> <em>s2</em> <tt class="docutils literal">|</tt> ... <tt class="docutils literal">|</tt> <em>sn</em> <tt class="docutils literal">&gt;</tt></p>
+<blockquote>
+<p>Matrix, aufgebaut aus Spaltenvektoren <em>s1</em>, <em>s2</em>, ...</p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">.</tt></p>
+<blockquote>
+<p>Matrixprodukt</p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">Matrix</tt></p>
+<blockquote>
+<p>Erzeugung von Matrizen; Spezialf&#228;lle sind</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">Matrix(</tt> <em>vector</em>, <tt class="docutils literal">shape = diagonal)</tt></p>
+<blockquote>
+<p>erzeugt Diagonalmatrix aus einem Vektor</p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">Matrix(</tt> <em>n</em>, <tt class="docutils literal">shape = identity)</tt></p>
+<blockquote>
+<p>erzeugt <em>n</em> x <em>n</em> Einheitsmatrix</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">Determinant</tt></p>
+<blockquote>
+<p>Determinante; der Befehl <tt class="docutils literal">Determinant</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">LinearAlgebra</tt></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="matrixplot">
+<h2>Matrixplot</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">matrixplot(</tt> <em>M</em> <tt class="docutils literal">, heights=histogram)</tt></p>
+<p>3D-Plot, dessen H&#246;hen durch die Eintr&#228;ge der
+Matrix <em>M</em> gegeben werden; <tt class="docutils literal">matrixplot</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">plots</tt></p>
+</li>
+</ul>
+</div>
+<div class="section" id="lineare-gleichungssysteme">
+<h2>Lineare Gleichungssysteme</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">GenerateMatrix(</tt> <em>ListevonGleichungen</em>, <em>Variablen</em>,
+<em>Option</em> <tt class="docutils literal">)</tt></p>
+<p>erzeugt Matrix zu dem durch <em>ListevonGleichungen</em> in den
+<em>Variablen</em> gegebenen Gleichungssystem; m&#246;gliche <em>Option</em> ist
+<tt class="docutils literal">augmented = true</tt>, dies zeigt an, dass eine Spalte mit der
+rechten Seite angebaut werden soll; <tt class="docutils literal">GenerateMatrix</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">LinearSolve(</tt> <em>A</em>, <em>b</em> <tt class="docutils literal">)</tt></p>
+<p>l&#246;st die Matrixgleichung <em>Ax</em> = <em>b</em>; <tt class="docutils literal">LinearSolve</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">ReducedRowEchelonForm(</tt> <em>A</em> <tt class="docutils literal">)</tt></p>
+<p>Zeilenstufenform von <em>A</em>; <tt class="docutils literal">ReducedRowEchelonForm</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+</ul>
+</div>
+<div class="section" id="zeilenweise-manipulation">
+<h2>Zeilenweise Manipulation</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">RowOperation</tt></p>
+<p>Sammelbefehl f&#252;r die zeilenweise Manipulation von Matrizen;
+<tt class="docutils literal">RowOperation</tt> geh&#246;rt zum Paket <tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Rank</tt></p>
+<p>Rang einer Matrix; geh&#246;rt zum Paket <tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+</ul>
+</div>
+<div class="section" id="normalformen">
+<h2>Normalformen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">Eigenvalues(</tt> <em>A</em> <tt class="docutils literal">)</tt></p>
+<p>Eigenwerte von <em>A</em>; <tt class="docutils literal">Eigenvalues</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Eigenvectors(</tt> <em>A</em> <tt class="docutils literal">)</tt></p>
+<p>Eigenwerte und -vektoren von <em>A</em>; <tt class="docutils literal">Eigenvectors</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">JordanForm(</tt> <em>M</em> <tt class="docutils literal">, output = ['J', <span class="pre">'Q'])</span></tt></p>
+<p>Jordansche Normalform von <em>M</em>, ausgegeben wird die Jordanform
+zusammen mit der zugeh&#246;rigen Matrix der Hauptvektoren;
+<tt class="docutils literal">JordanForm</tt> geh&#246;rt zum Paket <tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">SubMatrix</tt></p>
+<p>Teilmatrix, <tt class="docutils literal">SubMatrix</tt> geh&#246;rt zum Paket <tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+</ul>
+</div>
+<div class="section" id="andere-operationen-mit-matrizen">
+<h2>Andere Operationen mit Matrizen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">Transpose</tt></p>
+<p>Transponierte, <tt class="docutils literal">Transpose</tt> geh&#246;rt zum Paket <tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">DotProduct(</tt> <em>u</em> <tt class="docutils literal">,</tt> <em>v</em> <tt class="docutils literal">)</tt></p>
+<p>Skalarprodukt, wobei der erste Faktor komplex konjugiert wird;
+die Option <tt class="docutils literal">conjugate=false</tt> verhindert das.  <tt class="docutils literal">DotProduct</tt>
+geh&#246;rt zum Paket <tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-08">
+<h1>Lektion 08</h1>
+<div class="section" id="ebene-parametrische-plots">
+<h2>ebene parametrische Plots</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">plot([</tt> <em>x</em>, <em>y</em>, <em>t</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">],</tt> <em>Optionen</em> <tt class="docutils literal">)</tt></p>
+<blockquote>
+<p>zeichnet die durch die Ausdr&#252;cke <em>x</em> und <em>y</em> gegebene ebene
+Kurve, dabei sind <em>x</em> und <em>y</em> Ausdr&#252;cke in <em>t</em>; statt einer
+einzelnen Kurve ist auch eine Menge von Kurven m&#246;glich</p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">polarplot([</tt> <em>r</em>, <em>phi</em>, <em>t</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">],</tt> <em>Optionen</em> <tt class="docutils literal">)</tt></p>
+<blockquote>
+<p>dasselbe, aber f&#252;r Polarkoordinaten <em>r</em> und <em>phi</em>;
+<tt class="docutils literal">polarplot</tt> geh&#246;rt zum Paket <tt class="docutils literal">plots</tt></p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="der-arcustangens">
+<h2>Der Arcustangens</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">arctan(</tt> <em>y</em>, <em>x</em> <tt class="docutils literal">)</tt></p>
+<blockquote>
+<p>Winkel des Punktes <em>x</em> + i <em>y</em> gegen die positive reelle Achse</p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="polygonzuge">
+<h2>Polygonz&#252;ge</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">plot (</tt> <em>liste</em> <tt class="docutils literal">)</tt></p>
+<blockquote>
+<p>zeichnet das durch eine Liste von Datenpunkten gegebene Polygon</p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="datenimport">
+<h2>Datenimport</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">read(</tt> <em>Dateiname</em> <tt class="docutils literal">)</tt></p>
+<blockquote>
+<p>liest Maplekommandos aus Datei mit Namen <em>Dateiname</em>; der Name
+sollte in Anf&#252;hrungsstriche <tt class="docutils literal">&quot;</tt> eingeschlossen sein</p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">logplot</tt></p>
+<blockquote>
+<p>halblogarithmischer Graph</p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">save(</tt> <em>a</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">,</tt> <em>z</em> <tt class="docutils literal">,</tt> <em>Dateiname</em> <tt class="docutils literal">)</tt></p>
+<blockquote>
+<p>schreibt die angegebenen Ausdr&#252;cke in die Datei</p>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="raumkurven">
+<h2>Raumkurven</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">spacecurve([</tt> <em>x</em>, <em>y</em>, <em>z</em>, <em>t</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">],</tt> <em>Optionen</em> <tt class="docutils literal">)</tt></p>
+<blockquote>
+<p>zeichnet die durch die Ausdr&#252;cke <em>x</em>, <em>y</em> und <em>z</em> gegebene
+Raumkurve, dabei sind <em>x</em>, <em>y</em> und <em>z</em> Ausdr&#252;cke in <em>t</em>; statt
+einer einzelnen Kurve ist auch eine Menge von Kurven m&#246;glich;
+<tt class="docutils literal">spacecurve</tt> geh&#246;rt zum Paket <tt class="docutils literal">plots</tt></p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">tubeplot([</tt> <em>x</em>, <em>y</em>, <em>z</em>, <em>t</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">], radius =</tt> <em>r</em> <tt class="docutils literal">,</tt> <em>Optionen</em> <tt class="docutils literal">)</tt></p>
+<blockquote>
+<p>wie spacecurve, aber statt einer Raumkurve wird ein Schlauch
+der angegebenen Dicke gezeigt</p>
+<p>zus&#228;tzliche Optionen sind hier</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">color = [</tt> <em>r</em>, <em>g</em>, <em>b</em> <tt class="docutils literal">]</tt></p>
+<blockquote>
+<p>Angabe eine F&#228;rbefunktion als RGB-Wert; dabei sind
+<em>r</em>, <em>g</em> und <em>b</em> Ausdr&#252;cke im Parameter <em>t</em></p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">color</tt> = <em>h</em></p>
+<blockquote>
+<p>Angabe einer F&#228;rbefunktion durch einen Parameter
+<em>h</em>, der ein Ausdruck im Parameter <em>t</em> ist</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="flachen-im-raum">
+<h2>Fl&#228;chen im Raum</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">plot3d([</tt> <em>x</em>, <em>y</em>, <em>z</em> <tt class="docutils literal">],</tt> <em>s</em> <tt class="docutils literal">=</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em>, <em>t</em>
+<tt class="docutils literal">=</tt> <em>c</em> <tt class="docutils literal">..</tt> <em>d</em>, <em>optionen</em> <tt class="docutils literal">)</tt></p>
+<blockquote>
+<p>zeichnet die durch die Ausdr&#252;cke <em>x</em>, <em>y</em> und <em>z</em> gegebene
+Fl&#228;che im Raum; dabei sind <em>x</em>, <em>y</em> und <em>z</em> Ausdr&#252;cke in den
+Parametern <em>s</em> und <em>t</em></p>
+<p>zus&#228;tzliche Optionen sind hier</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">color = [</tt> <em>r</em>, <em>g</em>, <em>b</em> <tt class="docutils literal">]</tt></p>
+<blockquote>
+<p>Angabe eine F&#228;rbefunktion als RGB-Wert; dabei sind
+<em>r</em>, <em>g</em> und <em>b</em> Ausdr&#252;cke in den Parametern <em>s</em>
+und <em>t</em></p>
+</blockquote>
+</li>
+<li><p class="first"><tt class="docutils literal">color</tt> = <em>h</em></p>
+<blockquote>
+<p>Angabe einer F&#228;rbefunktion durch einen Parameter
+<em>h</em>, der ein Ausdruck in den Parametern <em>s</em> und
+<em>t</em> ist</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="ableitungen-von-vektorfunktionen">
+<h2>Ableitungen von Vektorfunktionen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">VectorCalculus</tt></p>
+<p>Paket zur Differentialrechnung mehrerer Ver&#228;nderlicher</p>
+</li>
+<li><p class="first"><tt class="docutils literal">BasisFormat(false)</tt></p>
+<p>Gradienten etc. werden in der gewohnten Tupelschreibweise
+ausgegeben.  <tt class="docutils literal">BasisFormat</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">VectorCalculus</tt>.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="gradienten-und-der-laplace-operator">
+<h2>Gradienten und der Laplace-Operator</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">Gradient(</tt> <em>f</em>, <em>liste</em> <tt class="docutils literal">)</tt></p>
+<p>Gradient von <em>f</em> nach den in <em>liste</em> aufgez&#228;hlten Variablen.
+<tt class="docutils literal">Gradient</tt> geh&#246;rt zum Paket <tt class="docutils literal">VectorCalculus</tt>.</p>
+</li>
+<li><p class="first"><tt class="docutils literal">Laplacian(</tt> <em>f</em>, <em>liste</em> <tt class="docutils literal">)</tt></p>
+<p>Laplace-Operator von <em>f</em> nach den in <em>liste</em> aufgez&#228;hlten
+Variablen. <tt class="docutils literal">Laplacian</tt> geh&#246;rt zum Paket <tt class="docutils literal">VectorCalculus</tt>.</p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-9">
+<h1>Lektion 9</h1>
+<div class="section" id="norm-eines-vektors">
+<h2>Norm eines Vektors</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">Norm</tt></p>
+<p>Norm eines Vektors oder einer Matrix; <tt class="docutils literal">Norm</tt> geh&#246;rt zum
+Paket <tt class="docutils literal">LinearAlgebra</tt>.  Nicht zu verwechslen mit der Norm
+eines Vektorfelds (s. <a class="reference internal" href="#vektorfelder">Vektorfelder</a>)</p>
+</li>
+</ul>
+</div>
+<div class="section" id="das-kreuprodukt">
+<h2>Das Kreuprodukt</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">CrossProduct</tt></p>
+<p>Kreuzprodukt; <tt class="docutils literal">CrossProduct</tt> geh&#246;rt zum Paket <tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+</ul>
+</div>
+<div class="section" id="vektorfelder">
+<h2>Vektorfelder</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">VectorField(</tt> <em>vektor</em> <tt class="docutils literal">, cartesian[</tt> <em>liste</em> <tt class="docutils literal">])</tt></p>
+<p><em>vektor</em> ist ein Vektor, der ein Ausdruck in den in <em>liste</em>
+aufgez&#228;hlten Variablen ist.  <tt class="docutils literal">VectorField</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">VectorCalculus</tt>.</p>
+</li>
+<li><p class="first"><tt class="docutils literal">fieldplot(</tt> <em>vf</em>, <em>x</em> = <em>a</em> <tt class="docutils literal">..</tt> <em>b</em>, <em>y</em> = <em>c</em> <tt class="docutils literal">..</tt>
+<em>d</em>, <em>optionen</em> <tt class="docutils literal">)</tt></p>
+<p>Darstellung des ebenen Vektorfelds <em>vf</em> durch Pfeile.  <em>vf</em>
+ist ein Vektorfeld in den Variablen <em>x</em> und <em>y</em>.  Die Anzahl
+der Pfeile kann mit <tt class="docutils literal">grid</tt> beeinflusst
+werden.  <tt class="docutils literal">fieldplot</tt> geh&#246;rt zum Paket <tt class="docutils literal">plots</tt>.</p>
+<p>zus&#228;tzliche Optionen sind hier</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">fieldstrength = log</tt></p>
+<blockquote>
+<p>Pfeill&#228;nge h&#228;ngt logarithmisch von der Norm des
+Vektorfelds ab; eine andere M&#246;glichkeit ist <tt class="docutils literal">fixed</tt></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p class="first"><tt class="docutils literal">fieldplot3d(</tt> <em>vf</em>, <em>x</em> = <em>a</em> <tt class="docutils literal">..</tt> <em>b</em>, <em>y</em> = <em>c</em> <tt class="docutils literal">..</tt>
+<em>d</em>, <em>z</em> = <em>e</em> <tt class="docutils literal">..</tt> <em>f</em>, <em>optionen</em> <tt class="docutils literal">)</tt></p>
+<p>Darstellung des 3D-Vektorfelds <em>vf</em> durch Pfeile.  <em>vf</em>
+ist ein Vektorfeld in den Variablen <em>x</em>, <em>y</em> und <em>z</em>.  Die Anzahl
+der Pfeile kann mit <tt class="docutils literal">grid</tt> beeinflusst
+werden.  <tt class="docutils literal">fieldplot3d</tt> geh&#246;rt zum Paket <tt class="docutils literal">plots</tt>.</p>
+</li>
+<li><p class="first"><tt class="docutils literal">Norm</tt></p>
+<p>Die Norm eines Vektorfelds.  Geh&#246;rt zum Paket
+<tt class="docutils literal">VectorCalculus</tt>. Gibt Funktion zur&#252;ck.  Nicht zu
+verwechseln mit der Norm eines Vektors aus dem Paket
+<tt class="docutils literal">LinearAlgebra</tt> (s. <a class="reference internal" href="#norm-eines-vektors">Norm eines Vektors</a>)</p>
+</li>
+</ul>
+</div>
+<div class="section" id="taylorpolynom-in-mehreren-veranderlichen">
+<h2>Taylorpolynom in mehreren Ver&#228;nderlichen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">mtaylor(</tt> <em>A</em> <tt class="docutils literal">,</tt> <em>liste</em> <tt class="docutils literal">,</tt> <em>n</em> <tt class="docutils literal">)</tt></p>
+<p>Taylorentwicklung des Ausdrucks <em>A</em> nach den Variablen in
+<em>liste</em> bis zur totalen Ordnung <em>n</em> ausschlie&#223;lich</p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-10">
+<h1>Lektion 10</h1>
+<div class="section" id="hessematrix-divergenz-und-rotation">
+<h2>Hessematrix, Divergenz und Rotation</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">SetCoordinates</tt></p>
+<p>Setzt ein Koordinatensystem.  Beliebte Koordinatensysteme sind
+<tt class="docutils literal">cartesian[x,y]</tt> und <tt class="docutils literal">cartesian[x,y,z]</tt>.
+<tt class="docutils literal">SetCoordinates</tt> geh&#246;rt zum Paket <tt class="docutils literal">VectorCalculus</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Divergence</tt></p>
+<p>Divergenz eine Vektorfeldes.  <tt class="docutils literal">Divergence</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">VectorCalculus</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Curl</tt></p>
+<p>Rotation eines Vektorfeldes.  <tt class="docutils literal">Curl</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">VectorCalculus</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Laplacian</tt></p>
+<p>Laplace-Operator.  <tt class="docutils literal">Laplacian</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">VectorCalculus</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Hessian</tt></p>
+<p>Hessematrix.  <tt class="docutils literal">Hessian</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">VectorCalculus</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Jacobian(</tt> <em>F</em>, <em>liste</em> <tt class="docutils literal">)</tt></p>
+<p>Jacobimatrix der Abbildung <em>F</em> nach den in <em>liste</em>
+aufgez&#228;hlten Variablen; <tt class="docutils literal">Jacobimatrix</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">VectorCalculus</tt></p>
+</li>
+</ul>
+</div>
+<div class="section" id="definitheit">
+<h2>Definitheit</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">IsDefinite(</tt> <em>A</em> <tt class="docutils literal">, query =</tt> <em>definitheitseigenschaft</em> <tt class="docutils literal">)</tt></p>
+<p>Pr&#252;fung, ob Matrix <em>A</em> die <em>definitheitseigenschaft</em> besitzt.
+Zul&#228;ssig f&#252;r <em>definitheitseigenschaft</em> sind
+u.a. <tt class="docutils literal">positive_definite</tt> und <tt class="docutils literal">negative_definite</tt>.
+Voreinstellung ist <tt class="docutils literal">positive_definite</tt>.  <tt class="docutils literal">IsDefinite</tt>
+geh&#246;rt zum Paket <tt class="docutils literal">LinearAlgebra</tt></p>
+</li>
+</ul>
+</div>
+<div class="section" id="polarkoordinaten">
+<h2>Polarkoordinaten</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">MapToBasis</tt></p>
+<p>Wechsel des Koordinatensystems.  <tt class="docutils literal">MapToBasis</tt> geh&#246;rt zum
+Paket <tt class="docutils literal">VectorCalculus</tt></p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-11">
+<h1>Lektion 11</h1>
+<div class="section" id="extrema-unter-nebenbedingungen">
+<h2>Extrema unter Nebenbedingungen</h2>
+<ul>
+<li><p class="first"><em>A</em> <tt class="docutils literal">union</tt> <em>B</em></p>
+<p>Vereinigung der Mengen <em>A</em> und <em>B</em></p>
+</li>
+<li><p class="first"><tt class="docutils literal">not</tt></p>
+<p>boolesche Verneinung</p>
+</li>
+<li><p class="first"><tt class="docutils literal">max</tt>, <tt class="docutils literal">min</tt></p>
+<p>Maximum und Minimum einer Folge oder Liste</p>
+</li>
+<li><p class="first"><tt class="docutils literal">isprime</tt></p>
+<p>probabilistischer Primzahltest</p>
+</li>
+<li><p class="first"><tt class="docutils literal">select(</tt> <em>b</em>, <em>liste</em>, <em>parameter</em> <tt class="docutils literal">)</tt></p>
+<p><em>b</em> ist eine Boolesche Funktion; <tt class="docutils literal">select</tt> w&#228;hlt aus <em>liste</em>
+alle <em>a</em> aus, f&#252;r die <em>b</em> ( <em>a</em>, <em>parameter</em>) den Wert <tt class="docutils literal">true</tt>
+ergibt</p>
+</li>
+<li><p class="first"><tt class="docutils literal">has(</tt> <em>a</em>, <em>b</em> <tt class="docutils literal">)</tt></p>
+<p>Boolesche Funktion, die <tt class="docutils literal">true</tt> ergibt, wenn <em>a</em> den
+Teilausdruck <em>b</em> enth&#228;lt</p>
+</li>
+</ul>
+</div>
+<div class="section" id="zeichenkettenverarbeitung-und-plotverschonerung">
+<h2>Zeichenkettenverarbeitung und Plotversch&#246;nerung</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">||</tt></p>
+<p>Verheftung von Zeichenketten</p>
+</li>
+<li><p class="first"><tt class="docutils literal">cat</tt></p>
+<p>Verheftung von Zeichenketten</p>
+</li>
+<li><p class="first"><tt class="docutils literal">print(</tt> <em>ausdruck</em> <tt class="docutils literal">)</tt></p>
+<p><em>ausdruck</em> wird ausgegeben, selbst dann wenn Ausgabe z.B. in
+<tt class="docutils literal">for</tt>-Schleife unterdr&#252;ckt ist</p>
+</li>
+<li><p class="first"><tt class="docutils literal">latex(</tt> <em>ausdruck</em> <tt class="docutils literal">)</tt></p>
+<p><em>ausdruck</em> wird in der Schriftsatzsprache LaTeX ausgegeben</p>
+</li>
+<li><p class="first"><tt class="docutils literal">typeset(</tt> <em>ausdruck1</em> <tt class="docutils literal">,</tt> <em>ausdruck2</em> <tt class="docutils literal">,</tt> ... <tt class="docutils literal">)</tt></p>
+<p>f&#252;gt Ausdr&#252;cke zu Zeichenkette zusammen, n&#252;tzlich in Zusammenhang
+mit Plotbefehlen</p>
+</li>
+<li><p class="first">weitere Optionen der <tt class="docutils literal">plot</tt>-Befehle</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">font = [TIMES, ROMAN,</tt> <em>n</em> <tt class="docutils literal">]</tt></p>
+<p>stellt den Zeichensatz f&#252;r die Achsen auf die Gr&#246;&#223;e
+<em>n</em> ein</p>
+</li>
+<li><p class="first"><tt class="docutils literal">titlefont = [TIMES, ROMAN,</tt> <em>n</em> <tt class="docutils literal">]</tt></p>
+<p>stellt den Zeichensatz f&#252;r die &#220;berschrift auf die Gr&#246;&#223;e
+<em>n</em> ein</p>
+</li>
+<li><p class="first"><tt class="docutils literal">labels = [</tt> <em>x</em>, <em>y</em> <tt class="docutils literal">]</tt></p>
+<p>legt Achsenbeschriftung fest</p>
+</li>
+<li><p class="first"><tt class="docutils literal">lightmodel =</tt> <em>modell</em></p>
+<p><em>modell</em> ist einer der Werte <tt class="docutils literal">light1</tt>, <tt class="docutils literal">light2</tt>,
+<tt class="docutils literal">light3</tt> oder <tt class="docutils literal">light4</tt></p>
+</li>
+</ul>
+</li>
+<li><p class="first"><tt class="docutils literal">textplot([</tt> <em>x</em>, <em>y</em>, <em>text</em> <tt class="docutils literal">], align = {</tt> <em>position</em>
+<tt class="docutils literal">},</tt> <em>optionen</em> <tt class="docutils literal">)</tt></p>
+<p>druckt <em>text</em> an die Stelle (<em>x</em>, <em>y</em>); <tt class="docutils literal">textplot</tt> geh&#246;rt
+zum Paket <tt class="docutils literal">plots</tt>; <em>position</em> ist eine Kombination der Werte</p>
+<ul class="simple">
+<li><tt class="docutils literal">ABOVE</tt></li>
+<li><tt class="docutils literal">BELOW</tt></li>
+<li><tt class="docutils literal">RIGHT</tt></li>
+<li><tt class="docutils literal">LEFT</tt></li>
+</ul>
+</li>
+<li><p class="first"><tt class="docutils literal">textplot3d([</tt> <em>x</em>, <em>y</em>, <em>z</em>, <em>text</em> <tt class="docutils literal">], align = {</tt>
+<em>position</em> <tt class="docutils literal">},</tt> <em>optionen</em> <tt class="docutils literal">)</tt></p>
+<p>dasselbe d&#252;r 3D-Plots; <tt class="docutils literal">textplot3d</tt> geh&#246;rt zum Paket <tt class="docutils literal">plots</tt></p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-12">
+<h1>Lektion 12</h1>
+<div class="section" id="gewohnliche-differentialgleichungen">
+<h2>Gew&#246;hnliche Differentialgleichungen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">dsolve({</tt> <em>Dgl_1</em>, ..., <em>Dgl_n</em>, <em>Ab_</em>, ..., <em>Ab_n</em> <tt class="docutils literal">}</tt>,
+<em>y</em> <tt class="docutils literal">(</tt> <em>x</em> <tt class="docutils literal">),</tt> <em>optionen</em> <tt class="docutils literal">)</tt></p>
+<p>L&#246;st gew&#246;hnliches Differentialgleichungssystem in <em>y(x</em>) mit
+Anfangsbedingungen; die Anfangsbedingungen d&#252;rfen fehlen;
+m&#246;gliche <em>optionen</em> sind:</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">type = numeric</tt></p>
+<p>Numerische L&#246;sung; dazu m&#252;ssen ausreichend
+Anfangsbedingungen vorgegeben sein</p>
+</li>
+<li><p class="first"><tt class="docutils literal">output = listprocedure</tt></p>
+<p>steuert Ausgabe bei numerischer L&#246;sung</p>
+</li>
+</ul>
+</li>
+<li><p class="first"><tt class="docutils literal">rhs</tt></p>
+<p>rechte Seite einer Gleichung</p>
+</li>
+<li><p class="first"><tt class="docutils literal">D(</tt> <em>f</em> <tt class="docutils literal">)</tt></p>
+<p>Die Funktion <em>f</em> wird einmal abgeleitet</p>
+</li>
+</ul>
+</div>
+<div class="section" id="hohere-ordnung">
+<h2>H&#246;here Ordnung</h2>
+<ul>
+<li><p class="first">weitere Optionen der <tt class="docutils literal">plot</tt>-Befehle</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">legend</tt></p>
+<p>Legende zur Unterscheidung mehrerer Kurven</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-13">
+<h1>Lektion 13</h1>
+<div class="section" id="die-besselsche-differentialgleichung">
+<h2>Die Besselsche Differentialgleichung</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">BesselJ, BesselK, BesselI, BesselY</tt></p>
+<p>Besselfunktionen</p>
+</li>
+</ul>
+</div>
+<div class="section" id="bewegte-bilder">
+<h2>Bewegte Bilder</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">animate(</tt> <em>plotbefehl</em> <tt class="docutils literal">, [</tt> <em>argumente</em> <tt class="docutils literal">],</tt> <em>t</em> <tt class="docutils literal">=</tt>
+<em>r</em> .. <em>s</em>, <em>optionen</em>)</p>
+<p>F&#252;hrt f&#252;r 25 Werte von <em>t</em> im Intervall [<em>r</em>, <em>s</em>] den Befehl
+<em>plotbefehl</em> ( <em>argumente</em> ) aus und zeigt die Ergebnisse
+hintereinander als bewegtes Bild.  Optionen von <em>plotbefehl</em>
+geh&#246;ren in die <em>argumente</em>, Optionen von <tt class="docutils literal">animate</tt> geh&#246;ren
+in die <em>optionen</em>.  Eine wichtige Option ist <tt class="docutils literal">frames</tt>, wenn
+man nicht genau 25 Bilder w&#252;nscht.  <tt class="docutils literal">animate</tt> geh&#246;rt zum
+Paket <tt class="docutils literal">plots</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">BesselJ, BesselK, BesselI, BesselY</tt></p>
+<p>Besselfunktionen</p>
+</li>
+</ul>
+</div>
+<div class="section" id="ausdrucke">
+<h2>Ausdrucke</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">plotsetup(window)</tt></p>
+<p>Ausgabe in Fenster</p>
+</li>
+<li><p class="first"><tt class="docutils literal">plotsetup(inline)</tt></p>
+<p>Ausgabe in das Arbeitblatt</p>
+</li>
+<li><p class="first"><tt class="docutils literal">plotsetup(</tt> <em>format</em>   <tt class="docutils literal">, plotoutput =</tt> <em>datei</em> <tt class="docutils literal">)</tt></p>
+<p>Ausdruck in <em>datei</em> im Format <em>format</em>, einige M&#246;glichkeiten
+sind</p>
+<ul class="simple">
+<li><tt class="docutils literal">ps</tt> Postscript</li>
+<li><tt class="docutils literal">cps</tt> farbiges Postscript</li>
+<li><tt class="docutils literal">jpeg</tt>  Jpeg</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="prozeduren-und-verzweigungen">
+<h2>Prozeduren und Verzweigungen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">proc</tt> ... <tt class="docutils literal">end proc</tt></p>
+<p>Anfang und Ende einer Prozedur.  Die Prozedur gibt das
+Ergebnis des letzten Befehls zur&#252;ck.  Eine Optionen ist</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">options=remember</tt></p>
+<p>merkt sich das Ergebnis f&#252;r sp&#228;tere Berechnungen.  Vor
+allem n&#252;tzlich bei rekursiven Prozduren</p>
+</li>
+<li><p class="first"><tt class="docutils literal">local</tt> <em>A</em></p>
+<p>die Variable <em>A</em> ist lokal zur Prozedur.  Das Gegenteil ist
+<tt class="docutils literal">global</tt></p>
+</li>
+</ul>
+</li>
+<li><p class="first"><tt class="docutils literal">return</tt> <em>A</em></p>
+<p>gibt <em>A</em> zur&#252;ck</p>
+</li>
+<li><p class="first"><tt class="docutils literal">if</tt> <em>A</em> <tt class="docutils literal">then</tt> ... <tt class="docutils literal">end if</tt></p>
+<p>Bedingte Ausf&#252;hrung.  Beliebig viele weitere Bedingungen
+werden mit <tt class="docutils literal">elif</tt> eingef&#252;gt.  Hinter allen Bedingungen kann
+<tt class="docutils literal">else</tt> verwendet werden, um die noch unbehandelten F&#228;lle zu
+bearbeiten.</p>
+</li>
+<li><p class="first"><em>n</em> <tt class="docutils literal">mod</tt> <em>m</em></p>
+<p>Rest von <em>n</em> modulo <em>m</em></p>
+</li>
+</ul>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+<div class="section" id="lektion-14">
+<h1>Lektion 14</h1>
+<div class="section" id="zufallszahlen">
+<h2>Zufallszahlen</h2>
+<ul>
+<li><p class="first"><em>p</em> <tt class="docutils literal">:= rand(</tt> <em>a</em> <tt class="docutils literal">..</tt> <em>b</em> <tt class="docutils literal">)</tt></p>
+<p>Gibt eine Funktion <em>p</em> zur&#252;ck, so dass jeder Aufruf <em>p</em> <tt class="docutils literal">()</tt>
+eine pseudozuf&#228;llige ganze Zahl zwischen <em>a</em> und <em>b</em> ergibt
+(Grenzen eingeschlossen)</p>
+</li>
+<li><p class="first"><tt class="docutils literal">randomize(</tt> <em>n</em> <tt class="docutils literal">)</tt></p>
+<p>Setzt den Startpunkt der Pseudo-Zufallszahlenfolge</p>
+</li>
+<li><p class="first"><tt class="docutils literal">Shuffle(</tt> <em>L</em> <tt class="docutils literal">)</tt></p>
+<p>Permutiert die Elemente der Liste <em>L</em> zuf&#228;llig.  <tt class="docutils literal">Shuffle</tt>
+geh&#246;rt zum Paket <tt class="docutils literal">Statistics</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">RandomVariable(Uniform(</tt> <em>a</em> <tt class="docutils literal">,</tt> <em>b</em> <tt class="docutils literal">))</tt></p>
+<p>Gibt eine auf dem Intervall [a,b] gleichverteilte
+Zufallsvariable zur&#252;ck.  <tt class="docutils literal">RandomVariable</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">Statistics</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Sample(</tt> <em>X</em>, <em>n</em> <tt class="docutils literal">)</tt></p>
+<p>Zieht eine wie die Zufallsvariable <em>X</em> verteilte Stichprobe
+vom Umfang <em>n</em>.  <tt class="docutils literal">Sample</tt> geh&#246;rt zum Paket <tt class="docutils literal">Statistics</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Explode</tt></p>
+<p>Verwandelt einen STring in eine Liste von Zeichen.
+<tt class="docutils literal">Explode</tt> geh&#246;rt zum Paket <tt class="docutils literal">StringTools</tt></p>
+</li>
+<li><p class="first"><tt class="docutils literal">Implode</tt></p>
+<p>Umkehroperation zu <tt class="docutils literal">Explode</tt>.  <tt class="docutils literal">Implode</tt> geh&#246;rt zum Paket
+<tt class="docutils literal">StringTools</tt></p>
+</li>
+</ul>
+</div>
+<div class="section" id="fourierreihen">
+<h2>Fourierreihen</h2>
+<ul>
+<li><p class="first"><tt class="docutils literal">Heaviside</tt></p>
+<p>Heaviside-Funktion</p>
+</li>
+</ul>
+<hr class="docutils" />
+<p>&#169; 2014-2015 <a class="reference external" href="mailto:Ruediger.Braun&#64;uni-duesseldorf.de">R&#252;diger Braun</a></p>
+<p>zur&#252;ck zum <a class="reference internal" href="#inhaltsverzeichnis">Inhaltsverzeichnis</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr class="footer" />
+Generated on: 2015-02-02 06:59 UTC.
+
+</div>
+</body>
+</html>

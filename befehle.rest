@@ -315,6 +315,8 @@ Maple rechnet komplex
       ausdruck wird unter der Annahme ausgewertet, dass alle
       auftretenden Variablen reell sind      
 
+zurück zum Inhaltsverzeichnis_
+
 Lektion 3
 *********
 
@@ -412,6 +414,8 @@ Schleifen
       *befehl_1* ``;`` ... *befehl_n* ``; end do;``
 
       Schleife für *i* von *a* bis *b*, beide einschließlich 
+
+zurück zum Inhaltsverzeichnis_
 
 Lektion 4
 *********
@@ -516,6 +520,8 @@ Lösung transzendenter Gleichungen
   Reihenentwicklung des Ausdrucks *expr* im Punkt *a* nach der
   Variablen *x* zur Ordnung *n*.  Der Punkt darf *infinity* sein.
 
+zurück zum Inhaltsverzeichnis_
+
 Lektion 05
 **********
 
@@ -599,6 +605,8 @@ gesteuerte Integration
   Integral und *u* der Faktor, der abgeleitet wird; ``Parts`` ist
   Bestandteil des Pakets ``IntegrationTools``
 
+zurück zum Inhaltsverzeichnis_
+
 Lektion 06
 **********
 
@@ -650,6 +658,8 @@ Das komplex Bild
 	zeigt die Plots *pl1* bis *pln* in einem Bild an.  ``display``
 	gehört zum Paket ``plots``
 
+
+zurück zum Inhaltsverzeichnis_
 
 Lektion 07
 **********
@@ -775,6 +785,8 @@ Andere Operationen mit Matrizen
 	Skalarprodukt, wobei der erste Faktor komplex konjugiert wird; 
 	die Option ``conjugate=false`` verhindert das.  ``DotProduct``
 	gehört zum Paket ``LinearAlgebra``
+
+zurück zum Inhaltsverzeichnis_
 
 Lektion 08
 **********
@@ -904,6 +916,8 @@ Gradienten und der Laplace-Operator
 	Laplace-Operator von *f* nach den in *liste* aufgezählten
 	Variablen. ``Laplacian`` gehört zum Paket ``VectorCalculus``.
 
+zurück zum Inhaltsverzeichnis_
+
 Lektion 9
 *********
 
@@ -970,6 +984,8 @@ Taylorpolynom in mehreren Veränderlichen
 	Taylorentwicklung des Ausdrucks *A* nach den Variablen in
 	*liste* bis zur totalen Ordnung *n* ausschließlich
 
+zurück zum Inhaltsverzeichnis_
+
 Lektion 10
 **********
 
@@ -1027,6 +1043,7 @@ Polarkoordinaten
 	Wechsel des Koordinatensystems.  ``MapToBasis`` gehört zum
 	Paket ``VectorCalculus``
 
+zurück zum Inhaltsverzeichnis_
 
 Lektion 11
 **********
@@ -1128,6 +1145,8 @@ Zeichenkettenverarbeitung und Plotverschönerung
 
 	dasselbe dür 3D-Plots; ``textplot3d`` gehört zum Paket ``plots``
 
+zurück zum Inhaltsverzeichnis_
+
 Lektion 12
 **********
 
@@ -1166,6 +1185,8 @@ Höhere Ordnung
 	*	``legend``
 
 		Legende zur Unterscheidung mehrerer Kurven
+
+zurück zum Inhaltsverzeichnis_
 
 Lektion 13
 **********
@@ -1250,6 +1271,8 @@ Prozeduren und Verzweigungen
 
 	Rest von *n* modulo *m*
 
+zurück zum Inhaltsverzeichnis_
+
 Lektion 14
 **********
 
@@ -1307,7 +1330,6 @@ Fourierreihen
 
 © 2014-2015 `Rüdiger Braun`_
 
-zurück zur Homepage_ 
+zurück zum Inhaltsverzeichnis_
 
-.. _Homepage: http://compana.ruediger-braun.net
 .. _`Rüdiger Braun`: mailto:Ruediger.Braun@uni-duesseldorf.de
